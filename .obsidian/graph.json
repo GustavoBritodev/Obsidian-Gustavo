@@ -1,0 +1,44 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#HNS  ",
+      "color": {
+        "a": 1,
+        "rgb": 12255487
+      }
+    },
+    {
+      "query": "tag:#TarefasLuiz  ",
+      "color": {
+        "a": 1,
+        "rgb": 14382336
+      }
+    },
+    {
+      "query": "tag: #Suporte  ",
+      "color": {
+        "a": 1,
+        "rgb": 725738
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0.5,
+  "nodeSizeMultiplier": 1.14417879417879,
+  "lineSizeMultiplier": 1.57203742203742,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.1316872427983533,
+  "close": false
+}

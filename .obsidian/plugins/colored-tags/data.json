@@ -1,0 +1,42 @@
+{
+  "palette": {
+    "seed": 0,
+    "selected": "adaptive-soft",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": false
+  },
+  "knownTags": {
+    "anotações": 2,
+    "excalidraw": 4,
+    "gestao-inventario": 5,
+    "hns": 6,
+    "plataforma_de_ingressos": 7,
+    "playbooks": 8,
+    "prompt": 9,
+    "revisar-pb": 10,
+    "roadmap": 11,
+    "suporte": 12,
+    "tarefasluiz": 13,
+    "trabalho": 14,
+    "zurich": 17,
+    "hns/anotações": 1,
+    "hns/backlog": 2,
+    "hns/features": 3,
+    "hns/userstorys": 4,
+    "suporte/zurich": 1,
+    "tarefasluiz/contratos": 1,
+    "tarefasluiz/easyinventory": 2,
+    "hns/backlog/mvppropostacomercial": 1,
+    "hns/features/cct": 1,
+    "hns/features/mvppropostacomercial": 2,
+    "hns/userstorys/cct": 1,
+    "hns/userstorys/mvppropostacomercial": 2,
+    "suporte/zurich/processoproblem": 1
+  },
+  "tagColors": {},
+  "_version": 4
+}
