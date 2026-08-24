@@ -1,6 +1,6 @@
 {
   "showLineNumber": true,
   "promptDelete": false,
-  "attachmentFolderPath": "./Anexos",
+  "attachmentFolderPath": "assets",
   "alwaysUpdateLinks": true
 }
