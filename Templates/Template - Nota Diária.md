@@ -1,6 +1,6 @@
 ---
 tags:
-  - tipo/geral
+  - tipo/diario
 ---
 # {{date}}
 
