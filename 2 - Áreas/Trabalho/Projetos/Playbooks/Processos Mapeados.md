@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 ## Premissas
 
 - Todos os processos serão descritos também no Azure (Mosten Core ou Projeto de TI, tópico a definir).

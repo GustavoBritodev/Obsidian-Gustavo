@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #TarefasLuiz/EasyInventory
 
 Easy Inventory era onde faziam a gestão de patrimônio da empresa, no EI adicionavam qual é a máquina (número de patrimônio), com quem está a máquina e etc.

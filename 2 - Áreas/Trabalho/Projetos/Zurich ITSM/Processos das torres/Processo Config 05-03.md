@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 Tags: #Trabalho #Zurich #Anotações
 
 Começa pelo painel que mostra os chamados

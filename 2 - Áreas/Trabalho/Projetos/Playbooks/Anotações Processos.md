@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Processo de Controle de Equipamentos e Máquinas ✅
 Dentro do GLPI na aba Ativos e tela Computadores tem a lista de todas as máquinas contendo o nome, entidade, número de inventário, status, número de série, modelo, rede e comentários
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 ## 🎯 Objetivo
 Enquanto a maioria dos gráficos segue o padrão documentado em [[Tutorial - Tela de Configuração e Edição de Gráficos]], alguns tipos visuais possuem abas e regras exclusivas para atender propósitos analíticos avançados. Este documento cataloga essas exceções e regras específicas.
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #Playbooks
 ### Lista Enumerada de Todos os Playbooks 
 

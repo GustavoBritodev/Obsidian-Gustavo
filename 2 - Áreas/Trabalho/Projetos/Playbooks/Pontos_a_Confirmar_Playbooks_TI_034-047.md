@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Pontos a Confirmar e Lacunas — Playbooks de TI Mosten (034/26 a 047/26)
 
 **Escopo analisado:** 14 Playbooks (034, 035, 036, 037, 038, 039, 040, 041, 042, 043, 044, 045, 046 e 047/26).

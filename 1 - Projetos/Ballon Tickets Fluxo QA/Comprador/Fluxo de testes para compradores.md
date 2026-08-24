@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/projeto
+status: andamento
+---
+
 Home Page:
 Acessei um Evento qualquer e tentei Favoritar não está funcionando os Favoritar
 ![[Pasted image 20260409200840.png]]

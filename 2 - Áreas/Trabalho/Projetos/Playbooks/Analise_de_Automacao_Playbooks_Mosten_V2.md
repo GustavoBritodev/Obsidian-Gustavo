@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Análise de Automação — Playbooks de TI Interna Mosten
 
 > Entregável complementar aos Playbooks (nunca incorporado aos `.docx`), conforme a skill

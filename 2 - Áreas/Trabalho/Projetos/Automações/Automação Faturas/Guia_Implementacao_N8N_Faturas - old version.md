@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Guia de Implementação: Automação de Faturas SaaS no N8N
 
 **Ambiente:** n8n self-hosted, versão 2.33.4, em VM própria da Mosten.

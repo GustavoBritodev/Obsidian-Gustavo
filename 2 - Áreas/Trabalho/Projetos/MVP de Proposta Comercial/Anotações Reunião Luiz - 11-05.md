@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #HNS/Anotações
 Entrada da Proposta (Automaticamente deve ser gerado o código da Proposta):
 Tipos de Propostas:

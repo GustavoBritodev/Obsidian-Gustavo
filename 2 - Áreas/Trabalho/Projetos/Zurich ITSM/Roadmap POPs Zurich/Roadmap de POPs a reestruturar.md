@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 Tags: #Trabalho #Zurich #Roadmap
 
 ## 1- Torre de Problem

@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 ### Bloqueantes
 
 **Ingestão — filtro de remetentes**

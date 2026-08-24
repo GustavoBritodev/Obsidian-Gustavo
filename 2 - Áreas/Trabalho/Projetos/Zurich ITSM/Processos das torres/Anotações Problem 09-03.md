@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #Suporte/Zurich/ProcessoProblem
 Problem 
 

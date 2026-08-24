@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 ## Definição:
 "==Computação visual é um campo da inteligência artificial== que permite aos computadores enxergar e compreender o mundo real para tomada de decisão eficiente"
 

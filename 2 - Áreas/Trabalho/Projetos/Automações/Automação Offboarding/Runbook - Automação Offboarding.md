@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Runbook — Automação de Offboarding (Playbook 030/25)
 
 > **Versão:** 0.4 — 20/08/2026 **Responsável:** Gustavo Martinho Santos de Brito — Analista de Negócios e Processos, Mosten **Status geral:** 🟡 Em validação — Ramo A implementado e revisado, ingestão em modo diagnóstico

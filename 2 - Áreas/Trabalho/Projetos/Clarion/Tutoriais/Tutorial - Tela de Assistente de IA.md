@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 ## 🎯 Objetivo
 O "Assistente de IA" é o copiloto analítico da plataforma. O objetivo deste módulo é democratizar o acesso aos dados, permitindo que usuários – mesmo aqueles sem conhecimento técnico na construção manual de dashboards – utilizem linguagem natural (conversas do dia a dia) para obter insights instantâneos, extrair respostas de suas bases ou até mesmo solicitar a criação automática de gráficos complexos.
 

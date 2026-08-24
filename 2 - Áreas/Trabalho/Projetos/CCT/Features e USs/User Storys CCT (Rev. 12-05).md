@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #HNS/UserStorys/CCT
 ### User Story: 2.2 Ajustar o fluxo de tracking no envio de propostas para o comercial
 

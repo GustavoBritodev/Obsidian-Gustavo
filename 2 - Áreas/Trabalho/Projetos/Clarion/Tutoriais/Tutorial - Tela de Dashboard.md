@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 ## 🎯 Objetivo
 A tela de "Dashboard" é o ambiente principal de consumo de dados da plataforma. Enquanto o módulo de "Painéis" foca na construção e layout (arrastar e soltar), o "Dashboard" é projetado para a exploração analítica. É aqui que os gestores e usuários finais aplicam filtros dinâmicos, cruzam períodos, exportam relatórios e extraem inteligência do que foi construído.
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 ## 🎯 Objetivo
 O módulo de "Painéis" é a vitrine final do sistema. Enquanto o módulo de Gráficos atua como a fábrica de componentes, os Painéis são o produto finalizado. O objetivo desta tela é permitir que o usuário consolide diferentes gráficos em uma única página interativa (Dashboard), criando uma visão gerencial ampla que facilita a análise de métricas e a tomada de decisões.
 

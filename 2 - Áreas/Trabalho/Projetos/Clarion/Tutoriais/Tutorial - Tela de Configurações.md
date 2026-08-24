@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 ## 🎯 Objetivo
 A tela de "Configurações" é o painel de controle global do sistema. O objetivo deste módulo é permitir a personalização da identidade visual da plataforma (White Label), a padronização da formatação de dados numéricos e o gerenciamento do acesso de usuários administrativos.
 

@@ -32,6 +32,8 @@
     "tarefasluiz/contratos": 1,
     "tarefasluiz/easyinventory": 2,
     "tipo/diario": 1,
+    "tipo/geral": 2,
+    "tipo/projeto": 3,
     "hns/backlog/mvppropostacomercial": 1,
     "hns/features/cct": 1,
     "hns/features/mvppropostacomercial": 2,

@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 Visão Computacional:
 https://www.kaggle.com/datasets/algozee/agentic-rag-hallucination-dataset?select=retrieval_evidence.csv
 

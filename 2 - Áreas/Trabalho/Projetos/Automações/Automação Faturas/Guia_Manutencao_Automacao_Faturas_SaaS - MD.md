@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Guia de Manutenção — Automação de Faturas SaaS
 
 **Plataforma:** n8n 2.33.4 (self-hosted)

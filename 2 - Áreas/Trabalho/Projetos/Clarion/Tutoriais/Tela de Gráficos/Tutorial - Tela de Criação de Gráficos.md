@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 ## 🎯 Objetivo
 Antes de criar qualquer visualização, é necessário fornecer a matéria-prima: os dados. O objetivo desta etapa é permitir que o usuário conecte o sistema às suas fontes de informação, sejam elas arquivos locais, nuvem, APIs ou bancos de dados diretos.
 

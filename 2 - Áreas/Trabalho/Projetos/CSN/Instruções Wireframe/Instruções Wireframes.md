@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 | Etapa                    | Requisitos cobertos                    |
 | ------------------------ | -------------------------------------- |
 | 1 — Pesquisa por BL      | ENT-04, ENT-05, ENT-10                 |

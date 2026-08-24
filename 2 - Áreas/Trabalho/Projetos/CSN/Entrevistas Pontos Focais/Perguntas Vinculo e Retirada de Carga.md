@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Perguntas — EF Tela de Vínculo e Agendamento de Retirada (Portal Tecon)
 
 > **Escopo:** RET-01 a RET-16 · GEN-02 · GEN-04  

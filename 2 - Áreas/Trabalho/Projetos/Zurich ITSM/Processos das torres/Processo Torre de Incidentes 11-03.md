@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 Torre de Incidentes:
 
 Torre de Incidentes -> Delegação de demanda

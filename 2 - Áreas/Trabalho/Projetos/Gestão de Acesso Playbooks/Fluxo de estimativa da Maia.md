@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 1. listar os ids dos arquivos (get pra listar os ids de todos os arquivos)
 2. para todos os arquivos fazer um get para obter as permissões
 3. para cada um dos arquivos fazer um get pra obter o conteúdo do documento

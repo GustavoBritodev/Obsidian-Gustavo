@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # 📄 Gerenciamento de Clientes (Tela Inicial)
 
 ## 📌 Objetivo

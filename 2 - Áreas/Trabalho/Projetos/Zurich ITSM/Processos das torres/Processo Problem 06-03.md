@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 Tags: #Anotações #Trabalho #Zurich 
 
 Abre painéis do SN e vai em Problem Management Brasil e depois em Problem manager pra verificar as SLAs a Vencer

@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #HNS/UserStorys/MVPPropostaComercial
 ## User Story: 1. Feature: Gestão de Acesso (Proteção por Senha)
 

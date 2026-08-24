@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #Playbooks 
 ### Visão: Mapeamento de Playbooks por Cargos  
 

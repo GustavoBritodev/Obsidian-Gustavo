@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #HNS/Backlog/MVPPropostaComercial
 # Lista de Features:
 Autenticação de Acesso:

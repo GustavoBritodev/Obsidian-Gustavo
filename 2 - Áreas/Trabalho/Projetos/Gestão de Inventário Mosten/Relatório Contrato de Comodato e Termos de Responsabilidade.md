@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #TarefasLuiz/Contratos
 ### Contrato de Comodato:
 Referente ao âmbito jurídico do contrato é válido uma revisão para complementos e/ou atualizações.

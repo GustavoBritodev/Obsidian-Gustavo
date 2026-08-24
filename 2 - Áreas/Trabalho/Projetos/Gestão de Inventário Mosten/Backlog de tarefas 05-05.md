@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #HNS/Backlog
 ## Tarefas até o período do almoço:
 - [x] Entender se já pode cancelar o Easy Inventory e se todos os processos dele já estão funcionando no GLPI.

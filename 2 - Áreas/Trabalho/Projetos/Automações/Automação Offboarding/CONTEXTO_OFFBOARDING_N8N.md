@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Contexto: Automação de Offboarding Mosten (Playbook 030/25) via n8n
 
 > Documento de continuidade — gerado para retomar o projeto em outra conversa sem perder decisões já tomadas. Reflete o estado da conversa até a implementação parcial confirmada pelos JSONs dos Workflows 1, 2, 3 e parte do 4.

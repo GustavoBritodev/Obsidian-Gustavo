@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Portal Tecon — Gestão de Calendários para Carga Geral
 ### Origem: CAL-01 a CAL-07
 ---

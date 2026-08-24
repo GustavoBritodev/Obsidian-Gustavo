@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 #HNS/Anotações 
 Objetivo: Definir MVP e estruturar um Backlog Evolutivo.
 

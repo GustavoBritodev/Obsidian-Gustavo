@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 Tags: #Prompt #Trabalho #Zurich
 
 

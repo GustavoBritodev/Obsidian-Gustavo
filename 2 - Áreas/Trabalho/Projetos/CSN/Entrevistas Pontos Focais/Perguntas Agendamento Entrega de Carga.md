@@ -1,3 +1,9 @@
+---
+tags:
+  - tipo/geral
+status: rascunho
+---
+
 # Perguntas para Elaboração da EF: Agendamento de Entrega de Carga
 
 **Base:** Especificação Funcional Portal Tecon (v01, 30/01/2026) | ENT-01 a ENT-14 · GEN-02 · GEN-04
