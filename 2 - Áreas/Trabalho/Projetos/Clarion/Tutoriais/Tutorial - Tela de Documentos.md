@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 ## 🎯 Objetivo
 A tela de "Documentos Globais" funciona como um repositório centralizado do sistema. O objetivo deste espaço é armazenar e disponibilizar arquivos de caráter **informativo** (como manuais de uso, termos de serviço, políticas ou cartilhas) que precisam estar acessíveis para **todos os clientes** cadastrados na plataforma. Os arquivos aqui depositados não são consumidos como base de dados para os dashboards, servindo exclusivamente para download e consulta.
 

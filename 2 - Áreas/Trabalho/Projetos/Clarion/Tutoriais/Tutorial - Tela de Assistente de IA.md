@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 ## 🎯 Objetivo
 O "Assistente de IA" é o copiloto analítico da plataforma. O objetivo deste módulo é democratizar o acesso aos dados, permitindo que usuários – mesmo aqueles sem conhecimento técnico na construção manual de dashboards – utilizem linguagem natural (conversas do dia a dia) para obter insights instantâneos, extrair respostas de suas bases ou até mesmo solicitar a criação automática de gráficos complexos.
 
@@ -19,7 +17,6 @@ A tela apresenta uma interface clássica e intuitiva de chat conversacional.
 * **Área de Interação:** No rodapé, há um campo de texto livre onde o usuário digita seus comandos (prompts) e um botão de envio (ícone de avião de papel). É possível enviar até 8 anexos por mensagem (textos, planilhas CSV/Excel, PDFs e imagens).
 
 ---
-
 ## ⚙️ Fluxos de Uso
 
 ### 1. Consultas e Extração de Insights

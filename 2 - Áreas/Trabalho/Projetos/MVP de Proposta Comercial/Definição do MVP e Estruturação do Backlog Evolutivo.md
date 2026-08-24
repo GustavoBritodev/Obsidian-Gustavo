@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/mvp_de_proposta_comercial
 ---
-
 #HNS/Anotações 
 Objetivo: Definir MVP e estruturar um Backlog Evolutivo.
 

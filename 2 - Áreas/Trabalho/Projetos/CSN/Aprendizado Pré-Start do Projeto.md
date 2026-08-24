@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/csn
 ---
-
 # Glossário Solicitação de Liberação de Carga Solta:
 ## Bill Of Lading (BL):
 O Bill of Lading (BL), ou Conhecimento de Embarque, é o documento mais importante do modal aquaviário no comércio exterior, atuando como contrato de transporte, recibo de entrega da mercadoria e título de crédito (documento de propriedade). 

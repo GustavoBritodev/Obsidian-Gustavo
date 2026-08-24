@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho
 ---
-
 # GLOBAL RULE: LÍNGUA PADRÃO (PT-BR)
 
 * **Idioma Obrigatório:** Todas as respostas, explicações de arquitetura, documentações e interações diretas com o usuário devem ser geradas exclusivamente em **Português do Brasil (pt-BR)**.

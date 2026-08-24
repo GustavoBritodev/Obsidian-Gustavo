@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/playbooks
 ---
-
 # Análise de Automação — Playbooks de TI Interna Mosten
 
 > Entregável complementar aos Playbooks (nunca incorporado aos `.docx`), conforme a skill
@@ -40,7 +38,6 @@ negócio — e é o critério usado na seção final "Priorização de Implement
   formato de dado não confirmado). Não entra na priorização até a lacuna ser respondida.
 
 ---
-
 ## 1. Playbook 0XX/26 — Onboarding de Novos Colaboradores *(novo)*
 
 ### Mapeamento de trabalho manual automatizável
@@ -136,7 +133,6 @@ SUFICIENTE**
   dos Correios é utilizado (API pública, SIGEP Web ou gateway de terceiro).
 
 ---
-
 ## 2. Playbook 030/25 — Bloqueio de Acessos e Devolução de Equipamentos (Offboarding)
 
 ### Mapeamento de trabalho manual automatizável
@@ -212,7 +208,6 @@ SUFICIENTE**
   mesma fila de bloqueio.
 
 ---
-
 ## 3. Playbook 0XX/26 — Aquisição e Gestão de Periféricos
 
 ### Mapeamento de trabalho manual automatizável
@@ -266,7 +261,6 @@ SUFICIENTE**
   próprio Playbook — sem esse SLA definido, o gatilho temporal do lembrete não pode ser fechado.
 
 ---
-
 ## 4. Playbook 0XX/26 — Chamados (Recebimento, Gestão e Classificação de Chamado)
 
 ### Mapeamento de trabalho manual automatizável
@@ -320,7 +314,6 @@ SUFICIENTE**
 - Entrada: e-mail de resposta pós-fechamento. Saída: chamado reaberto.
 
 ---
-
 ## 5. Playbook 0XX/26 — Compra de Máquinas
 
 ### Mapeamento de trabalho manual automatizável
@@ -367,7 +360,6 @@ SUFICIENTE**
   (app de terceiro com API, WhatsApp manual, telefone).
 
 ---
-
 ## 6. Playbook 0XX/26 — Controle de Equipamentos e Máquinas (GLPI)
 
 ### Mapeamento de trabalho manual automatizável
@@ -436,7 +428,6 @@ servidor **MDT (Microsoft Deployment Toolkit)**, que automatizam imagem, drivers
 softwares corporativos (OpenVPN, GLPI Agent) de ponta a ponta.
 
 ---
-
 ## 7. Playbook 0XX/26 — Manutenção Corretiva e Preventiva
 
 ### Mapeamento de trabalho manual automatizável
@@ -496,7 +487,6 @@ softwares corporativos (OpenVPN, GLPI Agent) de ponta a ponta.
 - Evita a dependência de lembrete manual entre os dois Playbooks.
 
 ---
-
 ## 8. Playbook 0XX/26 — Controle de Incidentes de TI
 
 ### Mapeamento de trabalho manual automatizável
@@ -545,7 +535,6 @@ softwares corporativos (OpenVPN, GLPI Agent) de ponta a ponta.
 - Apoia o Checklist de Verificação do Processo já descrito no Playbook.
 
 ---
-
 ## 9. Playbook 0XX/26 — Controle de Licenças
 
 ### Mapeamento de trabalho manual automatizável
@@ -603,7 +592,6 @@ conector do Item 2)
   2. Grava o novo vínculo perfil-colaborador-licença na planilha.
 
 ---
-
 ## 10. Playbook 0XX/26 — Gestão de Contrato de Termos de Uso de Máquinas e Celulares
 
 ### Mapeamento de trabalho manual automatizável
@@ -649,7 +637,6 @@ SUFICIENTE**
   temporal do lembrete/bloqueio automatizado.
 
 ---
-
 ## 11. Playbook 0XX/26 — Gestão de Telecom
 
 ### Mapeamento de trabalho manual automatizável
@@ -701,7 +688,6 @@ SUFICIENTE**
 - Resolve diretamente a dor "depende hoje de verificação manual, linha a linha".
 
 ---
-
 ## 12. Playbook 0XX/26 — Solicitação de Códigos de Envio para Logística TI
 
 ### Mapeamento de trabalho manual automatizável
@@ -742,7 +728,6 @@ INSUMO SUFICIENTE**
   registradas manualmente hoje.
 
 ---
-
 ## 13. Playbook 0XX/26 — Solicitação e Recebimento de Máquinas e Credenciais (Zurich)
 
 ### Mapeamento de trabalho manual automatizável
@@ -796,7 +781,6 @@ INSUMO SUFICIENTE**
   disponível nem de credenciais/permissão de integração.
 
 ---
-
 ## 14. Playbook 0XX/26 — Gestão de Ambiente de Infraestrutura de TI *(novo)*
 
 ### Mapeamento de trabalho manual automatizável
@@ -858,7 +842,6 @@ SUFICIENTE**
   do próprio Playbook — não há trabalho manual a automatizar nela.
 
 ---
-
 ## 15. Playbook 0XX/26 — Gestão de Wi-Fi *(novo)*
 
 ### Mapeamento de trabalho manual automatizável
@@ -910,7 +893,6 @@ INSUMO SUFICIENTE**
   periodicidade e critérios de aceitação estão todos `[A CONFIRMAR]` no próprio Playbook.
 
 ---
-
 ## Priorização de Implementação
 
 Lista consolidada de todas as automações propostas nas 15 análises acima, ordenada da mais
@@ -1008,7 +990,6 @@ ser classificado (Simples/Média/Complexa) e reavaliado na priorização:
   4, 7 · Ambiente de Infraestrutura — Itens 2, 5 · Wi-Fi — Itens 1, 2, 3, 4, 5, 7.
 
 ---
-
 ## Perguntas Pendentes para Habilitar Automação Completa
 
 As lacunas abaixo bloqueiam o detalhamento técnico de itens específicos das análises acima.

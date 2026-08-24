@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/gestao_de_inventrio_mosten
 ---
-
 #TarefasLuiz/Contratos
 ### Contrato de Comodato:
 Referente ao âmbito jurídico do contrato é válido uma revisão para complementos e/ou atualizações.

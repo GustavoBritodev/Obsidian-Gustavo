@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 # 📄 Gerenciamento de Clientes (Tela Inicial)
 
 ## 📌 Objetivo
@@ -15,7 +13,6 @@ Esta é a tela principal de aterrissagem (Home) do sistema Clarion. O objetivo d
 Ao acessar o sistema, o usuário visualiza todos os ambientes de clientes aos quais possui permissão de acesso. A navegação prioriza uma busca rápida e uma visão macro do nível de atividade em cada um desses espaços.
 
 ---
-
 ## ⚙️ Fluxos de Uso
 
 ### 1. Criando um Novo Ambiente de Cliente
@@ -46,7 +43,6 @@ A exclusão de um ambiente é tratada como uma ação de alto risco. Para evitar
 *   **Resultado:** O ambiente inteiro é purgado do sistema de forma irreversível.
 
 ---
-
 ## 📋 Detalhamento de Campos e Regras
 
 ### Tabela 1: Elementos da Tela Principal (Cards e Busca)
@@ -70,7 +66,6 @@ A exclusão de um ambiente é tratada como uma ação de alto risco. Para evitar
 | **Conflito de Imagem (Upload vs URL)** | **Comportamento:** Caso o usuário preencha um link de URL e também faça o upload de um arquivo simultaneamente, o sistema priorizará a imagem oriunda do arquivo local (Upload).                                                                                                      |
 
 ---
-
 ## ⚠️ Atenção e Impactos Sistêmicos
 
 > **Nota de Impacto - Exclusão de Clientes:** 

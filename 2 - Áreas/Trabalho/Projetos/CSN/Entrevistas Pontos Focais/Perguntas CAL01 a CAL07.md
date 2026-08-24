@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/csn
 ---
-
 # Portal Tecon — Gestão de Calendários para Carga Geral
 ### Origem: CAL-01 a CAL-07
 ---
@@ -20,11 +18,9 @@ Introduzir segregação obrigatória por tipo de carga na camada de gestão de c
 Nenhum dos sete requisitos detalha comportamento de fallback, critérios de elegibilidade de calendários concorrentes ou modelo de dados de suporte.
 
 ---
-
 ## 🚨 Alertas de Risco & Casos de Borda
 
 ---
-
 ### 1. Erro de Numeração
 
 > **CAL-06 (5.1.2):** Criar opção para criar calendário por transportadora.
@@ -36,7 +32,6 @@ CAL-06 aparece duas vezes com semânticas completamente distintas: uma em 5.1.2 
 **Pergunta:** O requisito de criação de calendário por transportadora deve ser renumerado como CAL-06 e o de disponibilização/monitoramento como CAL-07, deslocando a segregação obrigatória para CAL-08. Confirmar com o time antes da próxima versão da EF?
 
 ---
-
 ### 2. Risco de Escopo Semântico
 
 > **CAL-01:** Adicionar filtro "Tipo de carga" com opções: Contêiner | Carga Geral (carga solta e entrega de granel).
@@ -48,7 +43,6 @@ CAL-06 aparece duas vezes com semânticas completamente distintas: uma em 5.1.2 
 **Pergunta:** O campo `Tipo de Carga` no calendário deve ser um seletor de dois valores (Contêiner | Carga Geral) ou de três valores (Contêiner | Break Bulk | Bulk), para que a segregação em CAL-07 opere com a granularidade necessária para os fluxos de Retirada?
 
 ---
-
 ### 3. Requisito Aberto Crítico
 
 > **CAL-05:** Se Tipo de calendário = Retirada: incluir "todos os tipos de documentos que autorizam a retirada" (ex.: ADM e leilão). *Listar todos os tipos de documentos que autorizam a retirada.*
@@ -58,7 +52,6 @@ O asterisco `*Listar todos os tipos de documentos que autorizam a retirada` é u
 ==**Pergunta:** A CSN consegue fornecer, antes da próxima versão da EF, a lista exaustiva de tipos de documento que autorizam retirada de Carga Geral no N4 (ex: ADM, leilão, DTA, outros)?==
 
 ---
-
 ### 4. Ambiguidade de Campo
 
 > **CAL-04:** Quando Tipo de carga = Carga Geral, ocultar os campos: Refrigerado, Status, IMO e OOG.
@@ -68,7 +61,6 @@ O campo `Status` não está descrito em nenhum outro ponto do bloco CAL. Não es
 ==**Pergunta: O campo `Status` listado em CAL-04 é o campo de status operacional do calendário (ativo/inativo)? Se sim, qual deve ser o valor default quando oculto para Carga Geral, e esse valor deve ser propagado para o N4 via groove?==
 
 ---
-
 ### 5. Underspecification Total
 
 > **CAL-06 (5.1.2):** Criar opção para criar calendário por transportadora.
@@ -78,7 +70,6 @@ O requisito completo é: ==*"Criar opção para criar calendário por transporta
 **Pergunta:** O "calendário por transportadora" é uma modalidade de criação (um filtro adicional no pop-up de CAL-03) ou uma tela/fluxo separado? E a transportadora pode ter mais de um calendário ativo simultaneamente para Carga Geral?
 
 ---
-
 ### 6. Edge Case: Edição com Troca de Tipo de Carga
 
 > **CAL-03:** Adicionar campo obrigatório "Tipo de Carga" com opções: Contêiner | Carga Geral.
@@ -90,7 +81,6 @@ Em modo de edição de um calendário existente de Contêiner, o usuário pode a
 **Pergunta:** Ao editar um calendário e alterar o `Tipo de Carga`, os valores dos campos ocultados por CAL-04 devem ser **(a)** limpos/zerados e não persistidos, **(b)** mantidos na base mas ignorados na operação, ou **(c)** a alteração de tipo em calendários com agendamentos vinculados deve ser bloqueada?
 
 ---
-
 ### 7. Edge Case: Migração de Calendários Existentes
 
 > **CAL-03:** Adicionar campo obrigatório "Tipo de Carga" com opções: Contêiner | Carga Geral.
@@ -100,7 +90,6 @@ A introdução do campo obrigatório `Tipo de Carga` impacta todos os calendári
 **Pergunta:** Os calendários existentes devem ser migrados automaticamente para `Tipo de Carga = Contêiner` como parte do release desta EF, ou o campo será opcional para registros legados?
 
 ---
-
 ### 8. Risco de Integração: Monitoramento de Gate
 
 > **CAL-06 (5.1.3):** Após salvar/editar calendário, janelas devem ser disponibilizadas conforme filtros e aparecer no monitoramento de gate para ajuste de quantidades.
@@ -110,7 +99,6 @@ O requisito pressupõe uma chamada ao N4 via groove no evento de `save`. Não es
 **Pergunta de Mitigação:** Se o groove de disponibilização de janelas no monitoramento de gate falhar durante o save do calendário, o registro do calendário no portal deve ser **(a)** revertido via rollback, **(b)** salvo em estado "pendente de sincronização", ou **(c)** salvo normalmente com alerta ao usuário interno?
 
 ---
-
 ### 9. Edge Case: Enforcement de CAL-07, Momento e UX do Bloqueio
 
 > **CAL-07:** Impedir uso de calendário de contêiner para agendar carga e vice-versa (segregação total por tipo de carga).
@@ -120,7 +108,6 @@ O requisito pressupõe uma chamada ao N4 via groove no evento de `save`. Não es
 **Pergunta:** O enforcement de CAL-07 deve operar de forma preventiva, ocultando/não listando calendários incompatíveis durante a seleção de janela, ou de forma reativa, exibindo erro ao tentar confirmar agendamento com calendário do tipo errado?
 
 ---
-
 ### 10. Lacuna: "Tipo de Calendário" como Pré-requisito de CAL-05
 
 > **CAL-05:** Se Tipo de calendário = Entrega: documento para filtro deve ser a reserva (BL). Se Tipo de calendário = Retirada: incluir todos os tipos de documentos que autorizam a retirada.
@@ -130,11 +117,9 @@ O requisito pressupõe uma chamada ao N4 via groove no evento de `save`. Não es
 **Pergunta:** O campo `Tipo de calendário` (Entrega/Retirada) já existe no pop-up de criação/edição do calendário atual, ou deve ser criado como parte desta EF? Se novo, quais são seus valores e regras de obrigatoriedade?
 
 ---
-
 ## 📋 Pauta de Validação para a Reunião
 
 ---
-
 ### 1. Estratégia, Negócios e OKRs
 
 **1.1**
@@ -155,7 +140,6 @@ O calendário por transportadora implica que a própria transportadora teria jan
 A EF não define volumetria. Qual a estimativa de calendários ativos simultâneos para Carga Geral esperada no go-live, considerando a quantidade atual de transportadoras operando no Tecon?
 
 ---
-
 ### 2. Governança, Compliance e Riscos
 
 **2.1**
@@ -169,7 +153,6 @@ A EF não define volumetria. Qual a estimativa de calendários ativos simultâne
 ==CAL-05 menciona ADM e leilão como exemplos de documentos de autorização de retirada. Há documentos de autorização com restrição de exibição ou uso, como documentos judiciais ou de apreensão, que não devem ser listados no portal para todos os perfis?==
 
 ---
-
 ### 3. Engenharia e Arquitetura de Software
 
 **3.1**
@@ -190,7 +173,6 @@ O groove de disponibilização de janelas deve receber como parâmetro o `Tipo d
 O enforcement do bloqueio de uso cruzado deve ser implementado exclusivamente no portal (regra de negócio no front/backend do portal) ou também deve ser validado no N4 via groove, ou seja, o N4 deve recusar um appointment se o calendário for do tipo incompatível com a carga?
 
 ---
-
 ### 4. Automação e Integração de Sistemas
 
 **4.1**
@@ -211,7 +193,6 @@ O evento de trigger para o groove é exclusivamente o `save` do calendário, ou 
 Existe algum mecanismo de reconciliação/batch entre o portal e o N4 para garantir que calendários de Carga Geral e suas janelas estejam sincronizados em caso de falha técnica pontual de um groove?
 
 ---
-
 ### 5. Operação, UI/UX e Front-end
 
 **5.1**
@@ -235,7 +216,6 @@ A ocultação deve ser imediata ao selecionar `Tipo de Carga = Carga Geral` (com
 A coluna `Tipo de carga` adicionada ao grid deve ser ordenável e agrupável, e qual é a ordenação default da tela `Planejamento → Calendário` após a implementação?
 
 ---
-
 ### 6. Suporte e Sustentação
 
 **6.1**
@@ -249,7 +229,6 @@ CAL-07 irá gerar situações onde usuários tentarão agendar carga em calendá
 Quando um tipo de documento não constar na lista do portal, o sistema deve exibir erro orientando o usuário a acionar o suporte/operação, ou há um campo de "outro documento" como fallback?
 
 ---
-
 ## 🔎 Outros Pontos de Atenção
 
 **Consistência Terminológica:** A EF usa "janela", "vaga" e "slot" de forma intercambiável ao longo do documento. No bloco CAL, os termos aparecem em CAL-06 ("janelas devem ser disponibilizadas") sem definição formal. Recomenda-se estabelecer um glossário controlado antes da versão final da EF para evitar ambiguidade nos critérios de aceite e caderno de testes.

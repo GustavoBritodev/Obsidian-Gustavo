@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/automaes
 ---
-
 # Guia de Implementação: Automação de Faturas SaaS no N8N
 
 **Ambiente:** n8n self-hosted, versão 2.33.4, em VM própria da Mosten.
@@ -62,7 +60,6 @@ O guia tem duas partes. A **Etapa 1** cobre o que é compartilhado por tudo e s�
 A ordem recomendada é: Etapa 1 → Workflow 1 (Fechamento) → Workflow 2 (Ingestão) → Workflow 3 (Monitoramento). O Fechamento vem primeiro porque concentra o risco técnico — é onde a planilha do Omie pode ser corrompida se algo sair errado.
 
 ---
-
 # ETAPA 1: Infraestrutura compartilhada
 
 ## 1.1 Banco de dados — concluído
@@ -196,7 +193,6 @@ Os PDFs seguem o padrão `Plataforma_NumeroDocumento_DataEmissao.pdf`. Quando o 
 **Regra permanente do desenho:** a automação sempre lê o modelo original e produz um arquivo novo. Ela nunca grava por cima dele — isso garante que uma execução com defeito não contamine o mês seguinte.
 
 ---
-
 # WORKFLOW 1: Fechamento
 
 **O que faz:** uma vez por mês, busca no banco tudo que ainda não foi enviado, copia a planilha modelo, escreve os lançamentos nessa cópia através da API do Excel, e manda por e-mail com os PDFs anexados.
@@ -1126,7 +1122,6 @@ Depois disso, clique em **Active** no canto superior direito.
 > **Ative só depois de a importação de homologação no Omie passar.** Tudo antes disso é hipótese confirmada por inspeção, não pelo sistema que de fato consome o arquivo.
 
 ---
-
 # WORKFLOW 2: Ingestão
 
 **O que faz:** a cada e-mail recebido em `faturas@mosten.com`, lê o PDF anexo, extrai os dados, arquiva o documento e grava o lançamento no banco como `pendente`.
@@ -1353,7 +1348,6 @@ Regras que este nó aplica:
 Depois de testar com um e-mail real, clique em **Active** no canto superior direito. Sem isso, o gatilho só funciona em execuções manuais de teste.
 
 ---
-
 # WORKFLOW 3: Monitoramento
 
 **O que faz:** verifica todo dia se a senha da aplicação Microsoft está perto de vencer, e avisa por e-mail antes que isso aconteça.
@@ -1465,7 +1459,6 @@ Uma aplicação aceita mais de uma senha válida ao mesmo tempo:
 O passo 6 é o que mantém o monitoramento vivo. Sem ele, ele silencia permanentemente.
 
 ---
-
 # Validação final antes de ativar tudo
 
 Execute na ordem. Não avance com etapa reprovada.
@@ -1500,7 +1493,6 @@ Execute na ordem. Não avance com etapa reprovada.
 | **Importação de homologação no Omie** | Arquivo aceito sem erro de layout |
 
 ---
-
 # O que ainda trava o projeto
 
 **Bloqueantes:**

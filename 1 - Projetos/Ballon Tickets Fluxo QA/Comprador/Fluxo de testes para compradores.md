@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/projeto
-status: andamento
+  - tipo/projeto/ballon_tickets_fluxo_qa
 ---
-
 Home Page:
 Acessei um Evento qualquer e tentei Favoritar não está funcionando os Favoritar
 ![[Pasted image 20260409200840.png]]

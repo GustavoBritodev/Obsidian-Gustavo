@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/automaes
 ---
-
 ### Bloqueantes
 
 **Ingestão — filtro de remetentes**

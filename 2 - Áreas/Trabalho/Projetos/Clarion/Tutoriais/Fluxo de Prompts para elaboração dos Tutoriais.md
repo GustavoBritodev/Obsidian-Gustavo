@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 Você deve atuar como um especialista em User Experience com expertise em elaboração de documentações que detalham o funcionamento de telas (Ex: Tutoriais).
 
 Seu objetivo é me auxiliar na seguinte demanda: 
@@ -28,7 +26,6 @@ Avalie também a possibilidade de elaborarmos uma skill para leitura da tela, id
 É de extrema importância que quando falarmos das telas e das regras, você não assuma ou imagine regras, sempre faça perguntas caso alguma funcionalidade não seja auto explicativa com a tela.
 
 ---
-
 Excelente! Gostei do plano de trabalho otimizado, então vamos iniciar pelo primeiro passo:
 
 1. A granularidade deve ser a Mista, pensando por exemplo em um tooltip ou botão que dê um contexto geral sobre a tela e também tooltipos específicos e contextuais. O usuário final não consigo prever, pois o sistema será vendido como um produto para diferentes empresas, logo é importante que a forma de escrita atenda a diferentes públicos.
@@ -53,7 +50,6 @@ Com as informações acima definidas, como por exemplo o padrão de escrita, no 
 Na elaboração do padrão de escrita, tenha ciência de que algumas coisas que estão explícitas no funcionamento da tela não é necessário entrar no máximo de detalhe de tutorial ou até mesmo não é necessário escrever, faça essa análise crítica a cada tela, pois é importante tomarmos cuidado para que a tela não fique poluída com tooltips em demasia ou um tutorial enorme, mas é tão importante quanto que abarquemos todas as possíveis dúvidas dos usuários
 
 ---
-
 Os dashboards gerados pelos clientes consomem dados desses documentos globais (ex: uma base de dados macro em .xlsx) ou eles são apenas para download informativo (ex: Manuais, Termos de Uso em .pdf)?
 R: Não, são apenas para download informativo. 
 
@@ -66,7 +62,6 @@ A existência da tag "Global" na tabela sugere que, no futuro ou em outras telas
 Enviar oportunidade de melhoria pro Lucas, sobre as tags de global na tela de Documentos
 
 ---
-
 Gostei demais dos resultados! Porém, o stakeholder/gerente da demanda solicitou que ela seja implementada de uma maneira mais específica.
 
 A ideia é que o tutorial seja feito em formato de texto, semelhante ao tutorial do PSOffice encontrado no link: https://produtopsoffice.atlassian.net/wiki/spaces/psoffice/overview?homepageId=819410

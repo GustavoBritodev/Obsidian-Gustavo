@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/mvp_de_proposta_comercial
 ---
-
 #HNS/Anotações
 Entrada da Proposta (Automaticamente deve ser gerado o código da Proposta):
 Tipos de Propostas:

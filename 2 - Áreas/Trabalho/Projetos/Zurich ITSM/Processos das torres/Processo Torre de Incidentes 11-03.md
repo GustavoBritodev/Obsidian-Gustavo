@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/zurich_itsm
 ---
-
 Torre de Incidentes:
 
 Torre de Incidentes -> Delegação de demanda

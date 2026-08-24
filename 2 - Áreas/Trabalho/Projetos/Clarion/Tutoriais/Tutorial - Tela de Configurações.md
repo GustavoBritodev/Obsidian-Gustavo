@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 ## 🎯 Objetivo
 A tela de "Configurações" é o painel de controle global do sistema. O objetivo deste módulo é permitir a personalização da identidade visual da plataforma (White Label), a padronização da formatação de dados numéricos e o gerenciamento do acesso de usuários administrativos.
 
@@ -15,7 +13,6 @@ Acesse a tela através do menu superior do sistema, clicando em **"Configuraçõ
 A tela é dividida em três abas principais, cada uma responsável por um escopo específico da configuração do sistema: **Branding**, **Formato Numérico** e **Usuários**.
 
 ---
-
 ### Aba 1: Branding (White Label)
 Nesta seção, o usuário personaliza as cores, logotipos e metadados, garantindo que o sistema tenha a identidade visual da sua própria empresa.
 
@@ -30,7 +27,6 @@ Nesta seção, o usuário personaliza as cores, logotipos e metadados, garantind
 *   **Cores do Tema e da Empresa:** Personalização de cores hexadecimais para a interface (Primária, Secundária, Texto e Hover) em ambos os modos (Claro/Escuro). O sistema possui um atalho inteligente em "Cores da Empresa" que permite extrair a paleta automaticamente a partir da logo salva.
 
 ---
-
 ### Aba 2: Formato Numérico
 Garante a consistência na exibição de moedas, decimais e milhares em toda a plataforma.
 
@@ -41,7 +37,6 @@ Garante a consistência na exibição de moedas, decimais e milhares em toda a p
 *   **Pré-visualização:** Um painel lateral à direita exibe em tempo real como os números padrão, números grandes e percentuais ficarão visualmente após a escolha.
 
 ---
-
 ### Aba 3: Usuários
 Área dedicada ao convite e gestão de membros da equipe administrativa.
 

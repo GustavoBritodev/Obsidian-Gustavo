@@ -1,7 +1,6 @@
 ---
 tags:
-  - tipo/diario
-status: andamento
+  - tipo/geral
 ---
 # {{date}}
 

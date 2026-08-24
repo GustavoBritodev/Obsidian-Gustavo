@@ -1,9 +1,8 @@
 ---
 tags:
+  - tipo/projeto/ballon_tickets_fluxo_qa
 - Plataforma_de_Ingressos
-status: andamento
 ---
-
 
 Fluxo de Criação de Contas: 
 

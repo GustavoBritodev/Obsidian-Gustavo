@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 ## 🎯 Objetivo
 Detalhar o funcionamento do painel de construção visual. Após conectar os dados (veja [[Tutorial - Tela de Criação de Gráficos]]), o usuário acessa o motor de edição, padronizado em 5 abas principais para modelar a informação.
 

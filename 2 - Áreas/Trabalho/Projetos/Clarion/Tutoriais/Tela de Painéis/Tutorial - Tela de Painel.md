@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 ## 🎯 Objetivo
 O módulo de "Painéis" é a vitrine final do sistema. Enquanto o módulo de Gráficos atua como a fábrica de componentes, os Painéis são o produto finalizado. O objetivo desta tela é permitir que o usuário consolide diferentes gráficos em uma única página interativa (Dashboard), criando uma visão gerencial ampla que facilita a análise de métricas e a tomada de decisões.
 
@@ -21,7 +19,6 @@ Ao acessar o módulo, o usuário visualiza a listagem de todos os dashboards con
 * **Ações:** O botão de opções (`...`) no canto superior do card permite gerenciar o painel (Editar ou Excluir).
 
 ---
-
 ## ⚙️ Fluxos de Uso
 
 ### 1. Construindo um Painel (Drag & Drop)

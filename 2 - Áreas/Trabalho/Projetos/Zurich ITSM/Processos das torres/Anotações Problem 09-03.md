@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/zurich_itsm
 ---
-
 #Suporte/Zurich/ProcessoProblem
 Problem 
 

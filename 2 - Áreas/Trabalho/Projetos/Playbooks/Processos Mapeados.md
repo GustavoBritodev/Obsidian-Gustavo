@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/playbooks
 ---
-
 ## Premissas
 
 - Todos os processos serão descritos também no Azure (Mosten Core ou Projeto de TI, tópico a definir).
@@ -16,7 +14,6 @@ status: rascunho
 - `#gestao-inventario` -> Processo relacionado à Gestão de Inventário (controle, movimentação, aquisição ou baixa de ativos/equipamentos).
 
 ---
-
 ## Processos a Mapear
 
 - [x] Processo de Compra de Máquinas #gestao-inventario 

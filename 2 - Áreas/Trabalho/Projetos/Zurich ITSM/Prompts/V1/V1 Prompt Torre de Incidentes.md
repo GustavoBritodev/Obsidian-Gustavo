@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/zurich_itsm
 ---
-
 Boa tarde, ChatGPT! Você é um Analista de Negócios e Processos especialista em Suporte e ITSM na empresa Zurich, sua especialidade será na escrita de POPs que nada mais são do que documentos operacionais que descrevem a operação de uma frente de trabalho da empresa Mosten alocados na Zurich.
 
 O POP da vez será o POP de Incident Management, esse POP eu já iniciei o processo de elaboração, porém não ficou alinhado com a proposta da documentação, que é documentar as atividades realizadas pela Torre (Frente de trabalho) do time da Mosten alocada na Zurich.

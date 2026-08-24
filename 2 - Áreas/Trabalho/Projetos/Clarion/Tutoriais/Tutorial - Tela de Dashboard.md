@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 ## 🎯 Objetivo
 A tela de "Dashboard" é o ambiente principal de consumo de dados da plataforma. Enquanto o módulo de "Painéis" foca na construção e layout (arrastar e soltar), o "Dashboard" é projetado para a exploração analítica. É aqui que os gestores e usuários finais aplicam filtros dinâmicos, cruzam períodos, exportam relatórios e extraem inteligência do que foi construído.
 
@@ -21,7 +19,6 @@ Ao acessar o módulo, o sistema carregará o painel principal. A interface é di
     No canto superior esquerdo da área de exibição, há um menu suspenso (`Painel:`) que permite alternar rapidamente entre os diferentes dashboards aos quais o usuário tem acesso (ex: Dashboard Financeiro, Dashboard Portuário), sem precisar voltar à tela de listagem.
 
 ---
-
 ## ⚙️ Ações e Ferramentas (Barra Superior)
 
 No cabeçalho do Dashboard, o usuário possui ferramentas vitais para a manipulação da visualização e extração dos dados:
@@ -32,7 +29,6 @@ No cabeçalho do Dashboard, o usuário possui ferramentas vitais para a manipula
 *   **Tela Cheia:** Oculta os menus laterais e superiores para visualização em monitores ou apresentações.
 
 ---
-
 ## 📥 Gerador de Relatórios (Exportação)
 
 A função de "Exportar", localizada no topo superior direito, não apenas baixa dados brutos, mas atua como um assistente de montagem de *Status Reports*.
@@ -58,7 +54,6 @@ Esta opção abre um assistente de 3 passos para criar apresentações formatada
         *   **WhatsApp:** Permite inserir um número com DDD. O PDF será hospedado na nuvem e um link de acesso será incluído automaticamente na mensagem do WhatsApp.
 
 ---
-
 ## 🗂️ Painel de Filtros (Lateral Esquerda)
 
 O grande diferencial do ambiente de consumo é a barra lateral de filtros, que permite fatiar os dados em tempo real sem alterar a estrutura original do painel.

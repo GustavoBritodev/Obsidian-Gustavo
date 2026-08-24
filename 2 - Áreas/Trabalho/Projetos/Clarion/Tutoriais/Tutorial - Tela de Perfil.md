@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 ## 🎯 Objetivo
 A tela "Meu Perfil" é o espaço individual e restrito de cada usuário dentro da plataforma. O objetivo deste módulo é centralizar a gestão de credenciais de segurança, identidade visual da conta (avatar) e dados cadastrais básicos, oferecendo autonomia para que o próprio usuário gerencie sua presença e acesso no sistema.
 

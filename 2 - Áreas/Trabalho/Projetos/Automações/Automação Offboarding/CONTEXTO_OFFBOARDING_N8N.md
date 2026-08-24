@@ -1,15 +1,12 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/automaes
 ---
-
 # Contexto: Automação de Offboarding Mosten (Playbook 030/25) via n8n
 
 > Documento de continuidade — gerado para retomar o projeto em outra conversa sem perder decisões já tomadas. Reflete o estado da conversa até a implementação parcial confirmada pelos JSONs dos Workflows 1, 2, 3 e parte do 4.
 
 ---
-
 ## 1. Objetivo do projeto
 
 Automatizar o Playbook 030/25 (Bloqueio de Acessos e Devolução de Equipamentos — Offboarding) da Mosten Tecnologia via n8n, disparado a partir de um webhook da Convenia quando um desligamento é finalizado. A automação deve revogar/desativar o acesso do colaborador em 8 sistemas, fazer backup de dados M365, e reportar o resultado para a TI.
@@ -17,7 +14,6 @@ Automatizar o Playbook 030/25 (Bloqueio de Acessos e Devolução de Equipamentos
 **Regra de negócio central:** bloqueio de acesso deve ocorrer na data de saída oficial (`access_removal_date` vindo da Convenia) **às 18h fixo**, sem tolerância de atraso — mas com um gate de aprovação manual antes da execução (fase de teste).
 
 ---
-
 ## 2. Sistemas envolvidos e status de integração
 
 | Sistema | Ação | Viabilidade de API | Status de decisão |
@@ -34,7 +30,6 @@ Automatizar o Playbook 030/25 (Bloqueio de Acessos e Devolução de Equipamentos
 **Fora do escopo desta fase:** GLPI (registro/encerramento de chamado), comunicação ao cliente.
 
 ---
-
 ## 3. Arquitetura geral — 5 workflows
 
 ```
@@ -50,7 +45,6 @@ Cada workflow é encadeado via **Execute Workflow / Execute Sub-workflow**, não
 **Sem Merge final no Workflow 4:** os 7 ramos não convergem para um node comum — cada um termina gravando seu próprio resultado em `offboarding_acoes`. O Workflow 5 (ainda não construído) deve fazer polling nessa tabela para saber quando todos os sistemas de um processo já foram registrados, e então disparar o relatório.
 
 ---
-
 ## 4. Modelo de dados (Postgres) — já criado via Workflow 0 (Setup)
 
 ```sql
@@ -90,7 +84,6 @@ Credencial Postgres já cadastrada no n8n: **"Postgres account automacoes_app"**
 **Padrão obrigatório em todo Insert em `offboarding_acoes`:** nunca enviar o campo `id` (é `SERIAL`, autoincremento — mapear na coluna causa erro ou comportamento indesejado).
 
 ---
-
 ## 5. Workflow 1 — Ingestão (✅ implementado e validado contra o JSON real)
 
 Webhook (`POST /webhook/offboarding/convenia`, raw body habilitado) → `Code` valida HMAC-SHA256 do header `Signature` contra `CONVENIA_WEBHOOK_SECRET` (padrão `spatie/laravel-webhook-client`: hex, sem prefixo) → `IF` assinatura válida → `IF` `body.type == "dismissal.finished"` → `HTTP Request` busca colaborador na Convenia (`GET /api/v3/employees/{id}`, header `token`) → `Set` normaliza dados (calcula `scheduled_datetime = access_removal_date + 18:00:00`) → `IF` e-mail e data presentes → `Postgres Insert` em `offboarding_processos` (`status: agendado`) → `Respond to Webhook` 200.
@@ -102,7 +95,6 @@ Webhook (`POST /webhook/offboarding/convenia`, raw body habilitado) → `Code` v
 - Confirmar nomes reais dos campos de resposta da Convenia (`data.name`, `data.corporate_email` são suposições).
 
 ---
-
 ## 6. Workflow 2 — Agendador (✅ implementado)
 
 `Schedule Trigger` (15 min) → `Postgres` seleciona `WHERE status='agendado' AND scheduled_datetime <= NOW()` → `Split In Batches` (1 por vez) → `Postgres Update` (`status: aguardando_aprovacao`) → `Execute Workflow` chama `[Offboarding] Aprovação` (id `lcIxYFHhLVQq3DsB`), passando `processo_id`, `nome`, `email` → retorna ao loop.
@@ -110,7 +102,6 @@ Webhook (`POST /webhook/offboarding/convenia`, raw body habilitado) → `Code` v
 Sem alterações pendentes conhecidas.
 
 ---
-
 ## 7. Workflow 3 — Aprovação (✅ implementado e validado contra o JSON real)
 
 `Execute Workflow Trigger` (nomeado **`Quando Chamado pelo Workflow 2`** — campos: `processo_id` number, `nome`, `email`) → `Microsoft Outlook` node, operação **Send and Wait** (`sendAndWait`), credencial **"Microsoft account - Gustavo"** (OAuth2 delegado, ambiente de teste usando a conta pessoal do Gustavo como aprovador — `APPROVER_EMAIL = gustavo.brito@mosten.com`) → `IF` `{{ $json.data.approved }}` → aprovado: `Postgres Update status=aprovado` (`aprovado_por = {{ $env.APPROVER_EMAIL }}`) + `Execute Workflow` chama `[Offboarding] Workflow Execução` (id `NTV6xYJWdxv8I93U`) / rejeitado: `Postgres Update status=rejeitado` + `Microsoft Outlook` notifica GeP (`toRecipients = {{ $env.GEP_NOTIFICATION_EMAIL }}`).
@@ -119,7 +110,6 @@ Sem alterações pendentes conhecidas.
 - Quem é o aprovador em produção (hoje é só o Gustavo, em teste).
 
 ---
-
 ## 8. Workflow 4 — Execução (🔶 parcialmente implementado)
 
 `Execute Workflow Trigger` → `Postgres Update status=em_execucao` → ramifica em paralelo para 7 ramos.
@@ -164,13 +154,11 @@ Sem alterações pendentes conhecidas.
 **Status real no JSON mais recente:** só o Ramo A está com nodes configurados de verdade (validado, sem bugs). Restam nodes `HTTP Request` vazios como placeholders para os demais ramos — nenhum dos ramos C a G tem parâmetros preenchidos ainda no n8n, e o Ramo B está zerado (órfão removido), aguardando o detalhamento node a node da Opção 1.
 
 ---
-
 ## 9. Workflow 5 — Verificador + Relatório Final: ❌ **NÃO INICIADO**
 
 Desenho conceitual (não detalhado node a node ainda): `Schedule Trigger` faz polling em `offboarding_acoes` contando quantos sistemas já foram registrados por `processo_id`; quando atingir o total esperado (9 registros: m365_bloqueio, m365_backup, pfsense, incontrol, azure_devops, qulture_rocks, pontomais, psoffice, onfly), monta e envia relatório final por e-mail para TI, e atualiza `offboarding_processos.status` para `concluido` ou `concluido_com_pendencias` (se algum `pendente_manual`/`falha` existir).
 
 ---
-
 ## 10. Variáveis de ambiente — checklist consolidado
 
 | Variável | Usada em | Status |
@@ -197,7 +185,6 @@ Desenho conceitual (não detalhado node a node ainda): `Schedule Trigger` faz po
 | (credencial/endpoint da VM dedicada do Ramo B) | HTTP/a definir | A criar junto do detalhamento pendente |
 
 ---
-
 ## 12. Riscos e premissas ainda vigentes (não resolvidos)
 
 1. **pfSense via SSH** é o node de maior risco operacional do workflow inteiro (acesso a firewall de produção) — usar usuário SSH com permissão mínima necessária.
@@ -210,7 +197,6 @@ Desenho conceitual (não detalhado node a node ainda): `Schedule Trigger` faz po
 8. Workflow "Infra - Notificar Erro" (já existente, reaproveitado do projeto Faturas SaaS) — **campos de entrada esperados por ele nunca foram confirmados** nesta conversa; necessário abrir esse workflow e verificar antes de conectar os fallbacks de erro do Workflow 4 a ele.
 
 ---
-
 ## 13. Estilo de trabalho combinado nesta conversa (para manter consistência)
 
 - Construção **um workflow por vez**, avançando só depois que o anterior é implementado/testado pelo usuário.
@@ -219,7 +205,6 @@ Desenho conceitual (não detalhado node a node ainda): `Schedule Trigger` faz po
 - Ao propor uma solução técnica nova (ex.: Ramo B), apresentar **alternativas comparadas** antes de implementar, e só detalhar node a node depois que o usuário escolhe explicitamente.
 
 ---
-
 ## 14. Próximo passo imediato
 
 Detalhar o Ramo B do Workflow 4 (M365 Backup) node a node, já usando a **Opção 1 (VM dedicada separada)** confirmada pelo usuário — este é o item que estava em aberto quando este documento foi gerado.

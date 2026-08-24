@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/zurich_itsm
 ---
-
 Tags: #Prompt #Trabalho #Zurich
 
 Bom dia, ChatGPT! Você é um Analista de Negócios e Processos especialista em Suporte e ITSM na empresa Zurich, sua especialidade é realizar análises e mapeamentos precisos de fluxos de processo e documentos, para elaboração de documentação de AS IS e posteriormente TO BE.
@@ -77,7 +75,6 @@ Obs: Validação de Expedite é exatamente igual a uma mudança normal, mas a pr
 Atenção É importante que você cruze as informações dos documentos com a descrição que eu dei, o que divergir ou não tiver sido citado na minha descrição, pode desconsiderar do documento, tendo em vista que algumas coisas lá não refletem a atualidade da operação do Release Manager da Mosten dentro do ITSM da Zurich.
 
 ---
-
 Gostei demais do resultado, ChatGPT! Recebi mais algumas informações com o key-user de Release Management e gostaria que você considerasse as anotações que recebi para enriquecimento do material, mas sem alterar a estrutura do documento.
 
 Para sua resposta gostaria que enviasse os trechos que irão conter a alteração com o enriquecimento do material e depois a versão final consolidada do POP (Em formato de texto enviado via chat).

@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/clarion
 ---
-
 ## 🎯 Objetivo
 O módulo de "Gráficos" é o motor analítico da plataforma. O Clarion é uma solução que leva você do dado à decisão com autonomia: transforme dados em visões claras e dashboards interativos, sem depender de analistas dedicados ou licenças de BI tradicionais. Este é o ambiente onde os componentes individuais dos dashboards são forjados.
 

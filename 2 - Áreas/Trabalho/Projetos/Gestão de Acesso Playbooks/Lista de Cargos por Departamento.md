@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/gestao_de_acesso_playbooks
 ---
-
 ## Diretoria
 - Diretor
 

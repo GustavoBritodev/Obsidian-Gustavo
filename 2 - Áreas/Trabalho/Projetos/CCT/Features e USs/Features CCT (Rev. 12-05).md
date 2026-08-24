@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/cct
 ---
-
 #HNS/Features/CCT
 ### 2.2 Ajustar o fluxo de tracking no envio de propostas para o comercial
 **Descrição:** Revisar e corrigir a lógica de gatilhos que inicia e encerra o rastreio de tempo (Lead Time) quando uma proposta é despachada do HNS para a equipe Comercial. O ajuste deve garantir que o indicador "HNS -> Comercial" reflita com precisão o momento em que a proposta fica disponível para o Comercial, evitando distorções nos gráficos de tempo de resposta.

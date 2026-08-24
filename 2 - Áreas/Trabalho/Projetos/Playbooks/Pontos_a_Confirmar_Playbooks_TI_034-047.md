@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/playbooks
 ---
-
 # Pontos a Confirmar e Lacunas — Playbooks de TI Mosten (034/26 a 047/26)
 
 **Escopo analisado:** 14 Playbooks (034, 035, 036, 037, 038, 039, 040, 041, 042, 043, 044, 045, 046 e 047/26).
@@ -11,7 +9,6 @@ status: rascunho
 **Como usar:** cada item traz o **Ponto a Confirmar** e uma **Pergunta Objetiva** que, respondida, resolve o ponto. A Parte 1 reúne questões que atravessam mais de um Playbook; a Parte 2 organiza pendências específicas de cada documento (incluindo as transversais que se originam nele).
 
 ---
-
 ## Resumo Executivo — Achados mais críticos
 
 1. **PLAYBOOK 036/26 ("Compra de Máquinas") é inteiramente sobre a conta Zurich, mas não leva "(Zurich)" no título** — inconsistente com o Playbook 047 e com o próprio rascunho anterior do documento, que já usava "(Zurich)" no nome. *(ver T1)*
@@ -21,7 +18,6 @@ status: rascunho
 5. **Critério de elegibilidade a celular corporativo divergente** entre o Playbook 037 (referência técnica) e o Playbook 042 (dono do processo). *(ver T5)*
 
 ---
-
 ## Parte 1 — Questões Transversais (envolvem mais de um Playbook)
 
 ### T1. Nome do Playbook 036 não reflete que é um processo exclusivo da conta Zurich
@@ -92,7 +88,6 @@ status: rascunho
 **Pergunta Objetiva:** O item 7 da Ata (aquisição e gestão de contratos de software, inventário e redundância) permanece como um Playbook totalmente separado a ser elaborado no futuro (conforme já registrado como pendência), ou parte desse conteúdo deveria ser incorporada ao próprio Playbook 039 em uma revisão futura, já que os nomes são muito parecidos e podem gerar confusão? São processos diferentes e não devem ser misturados.
 
 ---
-
 ## Parte 2 — Pontos a Confirmar por Playbook
 
 ### PLAYBOOK 034/26 — Aquisição e Gestão de Periféricos
@@ -190,7 +185,6 @@ R: Tudo de Gestão de Ambiente de Infraestrutura de TI mantenha em aberto e não
    **Pergunta Objetiva:** *(consolidada em T1 — nenhuma ação adicional necessária além da correção de nome já perguntada ali.)*
 
 ---
-
 ## Tabela-Resumo — Pendências por Playbook
 
 | Playbook | `[A CONFIRMAR]` explícitos | Pontos adicionais da análise | Envolvido em questão transversal (Parte 1) |

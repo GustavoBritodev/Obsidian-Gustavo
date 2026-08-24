@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/automaes
 ---
-
 # Guia de Manutenção — Automação de Faturas SaaS
 
 **Plataforma:** n8n 2.33.4 (self-hosted)
@@ -11,7 +9,6 @@ status: rascunho
 **Armazenamento:** Microsoft OneDrive (via Microsoft Graph)
 
 ---
-
 ## 1. Para que serve este documento
 
 Esta automação recebe as faturas das ferramentas de software contratadas pela Mosten, extrai os dados de cada documento, arquiva o comprovante e, uma vez por mês, envia ao financeiro uma planilha pronta para importação no Omie, acompanhada dos recibos.
@@ -23,7 +20,6 @@ A seção 2 traz um roteiro de teste de ponta a ponta, da base vazia até a plan
 **Este documento não substitui a leitura do fluxo no n8n.** Ele explica o porquê; o n8n mostra o quê.
 
 ---
-
 ## 2. Roteiro de teste de ponta a ponta
 
 Este roteiro valida a automação inteira, do e-mail que chega até a planilha que sai. Use-o depois de qualquer alteração estrutural, ao migrar de conta Microsoft, ao trocar o provedor de modelo de linguagem, ou antes de ativar em produção.
@@ -203,7 +199,6 @@ Rodar o Fechamento de novo. O registro deve entrar na planilha, e o e-mail deve 
 > **O teste não substitui a homologação no Omie.** A planilha só é considerada aceita depois de importada com sucesso no ambiente de homologação, com dados de faturas reais. Registros sintéticos servem para validar o fluxo, não o formato aceito pelo Omie.
 
 ---
-
 ## 3. Convenções deste documento
 
 ### Campos destacados
@@ -219,7 +214,6 @@ Nomes de nós aparecem entre crases: `Buscar Pendentes`. Eles são reproduzidos 
 > **Atenção:** comportamento não óbvio que já causou falha, ou que causará se alterado sem cuidado.
 
 ---
-
 ## 4. Visão geral da arquitetura
 
 ### Os cinco workflows
@@ -260,7 +254,6 @@ A tabela `faturas_saas` é o único ponto de acoplamento entre a Ingestão e o F
 Uma regra estruturante, que explica várias decisões adiante: **a Ingestão nunca converte moeda e o Fechamento nunca lê e-mail.** A Ingestão registra o valor na moeda original do documento; a conversão para BRL acontece no Fechamento, pela cotação PTAX da data de emissão. Isso permite reprocessar a conversão sem reprocessar o e-mail, e permite que uma fatura recebida hoje seja convertida com a cotação correta mesmo que o fechamento ocorra semanas depois.
 
 ---
-
 ## 5. Infraestrutura compartilhada
 
 ### 5.1 Credenciais
@@ -344,7 +337,6 @@ O e-mail de fechamento informa quantos registros estão nesse estado, para que a
 A marcação como `exportado` acontece após o envio, e não antes, de propósito: se o envio falhar, os registros continuam pendentes e entram no ciclo seguinte, em vez de sumirem sem terem sido enviados.
 
 ---
-
 ## 6. Workflow: `Infra - Setup Tabela Faturas`
 
 **Gatilho:** manual. **Frequência:** execução única, na implantação.
@@ -380,7 +372,6 @@ Nó de verificação, com a consulta `SELECT id, payload_parser FROM faturas_saa
 Serve apenas para confirmar, logo após a criação, que a tabela responde e que o `payload_parser` está gravando. **Não faz parte do processo.** Mantém o nome padrão do n8n, o que sinaliza que é auxiliar.
 
 ---
-
 ## 7. Workflow: `Workflow Ingestão`
 
 **Gatilho:** Microsoft Outlook Trigger. **Frequência:** a cada 5 minutos.
@@ -639,7 +630,6 @@ Quinze colunas vêm de `$('Normalizar').item.json.*`; apenas `caminho_arquivo` v
 **O `payload_parser` é JSONB e recebe texto.** O modo `Insert` converte pelo tipo declarado no schema da tabela.
 
 ---
-
 ## 8. Workflow: `Workflow Fechamento`
 
 **Gatilho:** Schedule Trigger, cron `0 8 * * *`. **Frequência:** verifica diariamente, executa uma vez por mês.
@@ -1005,7 +995,6 @@ const marcados = $input.all().filter((i) => i.json.id !== undefined).length;
 **A contagem é sobre os ids devolvidos pelo `RETURNING`.** Uma versão anterior lia `affectedRows`, campo que este nó Postgres não devolve, e o resultado era uma verificação que nunca disparava: o alarme parecia armado e não estava.
 
 ---
-
 ## 9. Workflow: `Infra - Notificar Erro`
 
 **Gatilho:** Error Trigger. **Frequência:** sob demanda, quando outro workflow falha.
@@ -1045,7 +1034,6 @@ Execucao: {{ $json.execution?.url || 'sem URL' }}
 > **As Settings deste workflow devem ter o campo Error Workflow vazio.** Um workflow com Error Trigger usa a si mesmo como error workflow por padrão; se o envio do Outlook falhar, isso produz realimentação.
 
 ---
-
 ## 10. Workflow: `Infra - Monitor Client Secret`
 
 **Gatilho:** Schedule Trigger, cron `0 8 * * *`. **Frequência:** diária.
@@ -1129,7 +1117,6 @@ Uma aplicação do Entra ID aceita mais de um secret válido simultaneamente, en
 > **O passo 6 é o que mantém o monitoramento vivo.** Sem ele, o monitor silencia permanentemente e passa uma falsa sensação de segurança.
 
 ---
-
 ## 11. Campos a alterar antes da produção
 
 Todos os valores destacados ao longo do documento, consolidados. Nenhum destes é defeito: são valores de teste, coerentes com o estado atual de validação.
@@ -1156,7 +1143,6 @@ Trocar a conta Microsoft altera três coisas ao mesmo tempo: a caixa vigiada pel
 - Revalidar `Arquivar PDF`, `Baixar modelo`, `Enviar Copia`, `Baixar Planilha Final` e `Baixar Documentos`
 
 ---
-
 ## 12. Divergências identificadas na configuração atual
 
 Diferente da seção anterior, estes são pontos que merecem correção independentemente da entrada em produção.
@@ -1204,7 +1190,6 @@ As Settings de workflow (Error Workflow e Timezone) não constam da exportação
 | `Infra - Setup Tabela Faturas` | indiferente | indiferente |
 
 ---
-
 ## 13. Manutenção periódica
 
 | Periodicidade                       | Tarefa                                                                                                | Onde                           |
@@ -1217,7 +1202,6 @@ As Settings de workflow (Error Workflow e Timezone) não constam da exportação
 | A cada troca de modelo de linguagem | Reconferir a extração com uma fatura de cada plataforma                                               | Ingestão                       |
 
 ---
-
 ## 14. Diagnóstico de falhas
 
 ### O fechamento não rodou no dia esperado
@@ -1276,7 +1260,6 @@ Algum nó foi renomeado sem atualizar as expressões que o referenciam. As expre
 Uso de `.item` para referenciar um nó que produz um item só, a partir de um nó que processa vários. Trocar para `.first()`.
 
 ---
-
 ## 15. Limitações conhecidas
 
 Nenhuma destas bloqueia a operação. Estão registradas para que não sejam redescobertas como se fossem defeito.
@@ -1298,7 +1281,6 @@ Nenhuma destas bloqueia a operação. Estão registradas para que não sejam red
 | `data_expiracao` é manual                        | Silencia se não for atualizada na renovação          | Passo 6 da seção 10.7                                             |
 
 ---
-
 ## 16. Decisões de escopo registradas
 
 | Decisão | Situação |

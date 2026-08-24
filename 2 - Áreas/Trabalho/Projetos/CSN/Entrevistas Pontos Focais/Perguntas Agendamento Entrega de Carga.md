@@ -1,16 +1,13 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/csn
 ---
-
 # Perguntas para Elaboração da EF: Agendamento de Entrega de Carga
 
 **Base:** Especificação Funcional Portal Tecon (v01, 30/01/2026) | ENT-01 a ENT-14 · GEN-02 · GEN-04
 **Modelo de referência estrutural:** EF013 — Gestão de Calendários para Carga Geral (v0.1)
 
 ---
-
 Se for longo curso: Campo tipo de recepção deverá ser habilidade com as opções NF-e, DAT e DTA. -> O que é longo curso?
 
 ## 1. Permissões e Perfis de Acesso
@@ -26,13 +23,11 @@ ENT-01 — Quem registra e quem agenda
 **P03.** `[ENT-01 / RN]` A vinculação "transportadora responsável pelo frete", que habilita o agendamento, é derivada de um campo do BL no N4 ou é uma configuração interna do portal?
 
 ---
-
 ## 4. Pesquisa por BL e Retorno do N4
 
 **P09.** `[ENT-05 / RN]` Quando o BL existe no N4 mas não atende às condições de retorno (ser de carga e ser de exportação ou storage), o sistema exibe mensagem distinta para cada condição não atendida ou uma mensagem genérica única?
 
 ---
-
 ## 5. Grid de Itens do BL
 
 **P14.** `[ENT-06 / RNF]` O grid de itens exibe todos os registros de uma vez ou é paginado? Se paginado, qual é o número de itens por página? Paginado
@@ -43,7 +38,6 @@ ENT-07 — Cálculo e regra de saldo
 Saldo disponível deve ser calculado no portal e nunca pode ficar menor que zero.
 
 ---
-
 ## 6. Vínculo de Documento de Entrada
 
 ==**P18.** `[ENT-09 / RN]` O que define se um BL é de "longo curso", condição que habilita os tipos NF-e, DAT e DTA no campo de tipo de recepção? Essa informação é um campo do BL no N4 ou é determinada por outra regra?==
@@ -62,7 +56,6 @@ Se for longo curso: Campo tipo de recepção deverá ser habilidade com as opç�
 Ao lado do campo tipo de documento o portal deverá ter uma “?” para explicar o que é cada documento.
 
 ---
-
 ## 7. Múltiplos BLs por Viagem
 
 **P24.** `[ENT-10 / RF]` Os itens de um BL extra associado à viagem são exibidos no mesmo grid do BL principal (lista unificada) ou em seções separadas por BL?
@@ -73,7 +66,6 @@ ENT-10 — Múltiplas inclusões e múltiplos BL
 Permitir repetir a inclusão quantas vezes necessário para registrar cargas da viagem; permitir associação de mais de um BL na mesma viagem.
 
 ---
-
 ## 8. Dados do Transporte
 
 **P26.** `[ENT-11 / RT]` Qual é a origem da lista de transportadoras: a mesma base utilizada no campo "Transportadora" da EF013 (Gestão de Calendários), integração com o SILOG ou outra fonte?
@@ -85,7 +77,6 @@ Permitir repetir a inclusão quantas vezes necessário para registrar cargas da 
 **P29.** `[ENT-11 / RF]` O campo "Placa do Cavalo 2" é sempre exibido no formulário (desabilitado por padrão) ou aparece somente quando o usuário indica que o veículo é bitrem? Ver depois
 
 ---
-
 ## 9. Validação SILOG
 
 ==**P30.** `[ENT-12 / RF]` A validação no SILOG é acionada por botão explícito do usuário ou automaticamente ao tentar avançar para a próxima etapa?==
@@ -102,7 +93,6 @@ Regras SILOG (Entrega):
 • Sucesso: prossegue.
 
 ---
-
 ## 10. Seleção de Janela e Calendário
 
 ==**P34.** `[ENT-13 / RN]` O critério de "calendário com maior detalhe", usado para seleção automática quando há mais de um calendário apto, precisa ser definido: quais atributos do calendário determinam o grau de detalhe? A presença de Transportadora específica, Área ou Cliente têm peso diferente entre si?==
@@ -120,7 +110,6 @@ Exibir janelas disponíveis; sistema escolhe calendário conforme filtros e disp
 Caso o registro tenha mais de um calendário que seja apto para o agendamento, utilizar o que possuí maior detalhes com a carga a ser agendada.
 
 ---
-
 ## 11. Múltiplos Agendamentos e Guias
 
 ==**P39.** `[ENT-14 / RF]` Após a confirmação do primeiro agendamento, o fluxo de geração de guias adicionais ocorre na mesma tela ou redireciona para uma nova instância do formulário com os dados de transporte pré-preenchidos?==
@@ -135,7 +124,6 @@ ENT-14 — Múltiplos agendamentos
 Portal de agendamento de entrega de carga deverá possuir a função para gerar múltiplas guias de agendamento. Após a realização do primeiro agendamento, habilitar a função de emitir múltiplas guias que deverá pertencer a janelas diferente para o conjunto. A depender da quantidade de guias a serem utilizadas pelo transportador, deve-se haver um ou mais documentos de entrada para cada agendamento. Essa função deverá consumir vagas disponíveis normalmente.
 
 ---
-
 ## 12. Integrações Finais com o N4
 
 **P43.** `[ENT-15 / RN]` Quando um item possui dois documentos de tipos diferentes vinculados (ex.: parte da quantidade com NF-e e parte com DAT), o sistema cria dois appointments distintos no N4, cada um com sua quantidade e documento? Esse entendimento está correto?

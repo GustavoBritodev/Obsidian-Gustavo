@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/gestao_de_inventrio_mosten
 ---
-
 #TarefasLuiz/EasyInventory
 
 Easy Inventory era onde faziam a gestão de patrimônio da empresa, no EI adicionavam qual é a máquina (número de patrimônio), com quem está a máquina e etc.

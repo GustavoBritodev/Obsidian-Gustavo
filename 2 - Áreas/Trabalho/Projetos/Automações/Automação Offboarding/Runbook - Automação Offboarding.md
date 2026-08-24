@@ -1,9 +1,7 @@
 ---
 tags:
-  - tipo/geral
-status: rascunho
+  - tipo/trabalho/projeto/automaes
 ---
-
 # Runbook — Automação de Offboarding (Playbook 030/25)
 
 > **Versão:** 0.4 — 20/08/2026 **Responsável:** Gustavo Martinho Santos de Brito — Analista de Negócios e Processos, Mosten **Status geral:** 🟡 Em validação — Ramo A implementado e revisado, ingestão em modo diagnóstico
@@ -11,7 +9,6 @@ status: rascunho
 > Documento vivo. Atualizado a cada iteração. O changelog fica no fim.
 
 ---
-
 ## 1. Visão geral do fluxo
 
 ```
@@ -46,7 +43,6 @@ Convenia (webhook dismissal.finished)
 |G|Qulture / PontoMais / PSOffice|—|✅ Manual por decisão|
 
 ---
-
 ## 2. Passo a passo de execução
 
 ### 2.1 Preparação do banco (uma vez)
@@ -203,7 +199,6 @@ WHERE a.status = 'pendente_manual' ORDER BY a.executado_em DESC;
 ```
 
 ---
-
 ## 3. Configuração — nodes `PARAMETROS`
 
 Não há `$env` nesta instância do n8n. Toda configuração vive em nodes Set chamados `PARAMETROS`, logo após o trigger, referenciados por `{{ $('PARAMETROS').first().json.campo }}`.
@@ -225,7 +220,6 @@ Não há `$env` nesta instância do n8n. Toda configuração vive em nodes Set c
 > 🔴 **Risco aceito e documentado:** segredos ficam em texto claro no JSON e **viajam em todo export**. Decisão consciente por indisponibilidade de acesso à infraestrutura do n8n. Interage com ISO/IEC 27001:2022 A.5.17 e A.8.24. Mitigações: não compartilhar exports fora da Mosten; rotacionar segredo se um export vazar; migrar para `$env` ou cofre quando houver acesso.
 
 ---
-
 ## 4. Premissas
 
 Cada premissa é algo assumido que **ainda não foi confirmado empiricamente**. Enquanto não confirmada, o fluxo pode falhar silenciosamente.
@@ -251,7 +245,6 @@ Cada premissa é algo assumido que **ainda não foi confirmado empiricamente**. 
 - Campos extras disponíveis e ainda não usados: `dismissal_type`, `termination_notice`, `new_supervisor_id`, `motive`, `remove_benefit`
 
 ---
-
 ## 5. Restrições
 
 |#|Restrição|Origem|
@@ -268,7 +261,6 @@ Cada premissa é algo assumido que **ainda não foi confirmado empiricamente**. 
 |R10|Aprovação humana obrigatória antes de qualquer revogação|Regra de negócio|
 
 ---
-
 ## 6. Dependências
 
 ### 6.1 Bloqueiam qualquer execução
@@ -300,7 +292,6 @@ Cada premissa é algo assumido que **ainda não foi confirmado empiricamente**. 
 - [ ] Política de expiração da aprovação (hoje: sem timeout — fica suspenso indefinidamente)
 
 ---
-
 ## 7. Pontos de atenção operacional
 
 **Modo diagnóstico não registra processo.** Enquanto `modo_diagnostico = true`, o evento é logado mas o desligamento **não é agendado**. Se um desligamento real chegar nesse período, usar o reprocessamento da seção 2.5.
@@ -316,7 +307,6 @@ Cada premissa é algo assumido que **ainda não foi confirmado empiricamente**. 
 **`Excluir Usuário pfSense` é destrutivo e não validado.** Recomendação: manter desabilitado (tecla `D`) até validar os comandos manualmente.
 
 ---
-
 ## 8. Changelog
 
 |Versão|Data|Alterações|
