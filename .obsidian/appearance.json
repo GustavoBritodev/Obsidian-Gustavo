@@ -2,7 +2,7 @@
   "cssTheme": "Minimal",
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "calendar_daily",
-    "graph_sidebar"
+    "graph_sidebar",
+    "calendar_daily"
   ]
 }
