@@ -1,0 +1,34 @@
+{
+  "timestamp_utc": "2026-08-27T14:45:51.946773+00:00",
+  "notes_scanned": 4,
+  "notes_changed": 0,
+  "suggested_tags_unicas": [
+    "AGENTS",
+    "Backlog",
+    "extracted",
+    "Features",
+    "Guia",
+    "Neural",
+    "Rede",
+    "Tageamento"
+  ],
+  "por_arquivo": {
+    "3 - Recursos/Excalidraw/Backlog de Features 2026-05-07 09.53.56.excalidraw.md": [
+      "Backlog",
+      "Features"
+    ],
+    "AGENTS.md": [
+      "AGENTS"
+    ],
+    "AGENTS_extracted/AGENTS.md": [
+      "AGENTS",
+      "extracted"
+    ],
+    "Guia de Tageamento - Rede Neural.md": [
+      "Guia",
+      "Neural",
+      "Rede",
+      "Tageamento"
+    ]
+  }
+}

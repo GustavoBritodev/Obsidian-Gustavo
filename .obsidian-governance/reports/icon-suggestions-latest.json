@@ -1,0 +1,81 @@
+{
+  "timestamp_utc": "2026-08-27T14:45:52.131964+00:00",
+  "suggestions_count": 15,
+  "suggestions": [
+    {
+      "path": ".obsidian-governance",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": ".obsidian-governance/reports",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": ".obsidian/plugins/colored-tags",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": ".obsidian/plugins/obsidian-habitica-integration",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": ".obsidian/plugins/obsidian-linter",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": ".obsidian/plugins/obsidian-paste-image-rename",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": ".obsidian/plugins/theme-picker",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": ".obsidian/themes/Minimal",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": "2 - Áreas",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": "2 - Áreas/Trabalho",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": "2 - Áreas/Trabalho/Skills e Rules",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": "4 - Arquivos",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": "AGENTS_extracted",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": "AGENTS_extracted/.cursor",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    },
+    {
+      "path": "AGENTS_extracted/.cursor/rules",
+      "icon_sugerido": "LiFolderOpen",
+      "motivo": "contexto novo sem regra específica de override/token"
+    }
+  ]
+}

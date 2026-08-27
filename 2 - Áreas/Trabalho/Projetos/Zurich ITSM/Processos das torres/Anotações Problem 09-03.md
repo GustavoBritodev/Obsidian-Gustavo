@@ -1,6 +1,7 @@
 ---
 tags:
-  - tipo/trabalho/projeto/zurich_itsm
+- tipo/trabalho/projeto/zurich_itsm
+- Azure
 ---
 #Suporte/Zurich/ProcessoProblem
 Problem 

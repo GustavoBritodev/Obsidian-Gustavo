@@ -1,6 +1,8 @@
 ---
 tags:
-  - tipo/trabalho/projeto/zurich_itsm
+- tipo/trabalho/projeto/zurich_itsm
+- Azure
+- SQL
 ---
 Tags: #Prompt #Trabalho #Zurich
 

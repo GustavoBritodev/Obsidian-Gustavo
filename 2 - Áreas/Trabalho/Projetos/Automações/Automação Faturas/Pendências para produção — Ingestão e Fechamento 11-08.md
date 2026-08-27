@@ -1,6 +1,8 @@
 ---
 tags:
-  - tipo/trabalho/projeto/automaes
+- tipo/trabalho/projeto/automaes
+- AWS
+- Azure
 ---
 ### Bloqueantes
 

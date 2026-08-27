@@ -1,3 +1,8 @@
+---
+tags:
+- Excalidraw
+- Obsidian
+---
 # 🤖 Regras de Orquestração para IA (Obsidian Vault)
 
 Você (a Inteligência Artificial) está operando e auxiliando no gerenciamento do cofre Obsidian do Gustavo. Siga estas diretrizes de arquitetura rigorosamente.

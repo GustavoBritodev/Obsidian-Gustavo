@@ -1,0 +1,181 @@
+{
+  "timestamp_utc": "2026-08-27T14:45:50.958134+00:00",
+  "root": "C:\\Users\\ModalGR\\Documents\\Obsidian Vault",
+  "mark_requested": false,
+  "steps": [
+    {
+      "title": "Step 1: Baseline status",
+      "script": "obsidian_delta.py",
+      "args": [
+        "status"
+      ],
+      "exit_code": 0,
+      "payload": {
+        "base": "95b8e00c23757bd77fe7243b96a228329aab79ba",
+        "head": "95b8e00c23757bd77fe7243b96a228329aab79ba",
+        "commits_ahead": 0
+      }
+    },
+    {
+      "title": "Step 2: Changed markdown files",
+      "script": "obsidian_delta.py",
+      "args": [
+        "changed",
+        "--markdown-only"
+      ],
+      "exit_code": 0,
+      "payload": {
+        "base": "95b8e00c23757bd77fe7243b96a228329aab79ba",
+        "count": 49,
+        "files": [
+          ".agents/.agents/skills/course-notes-organizer/SKILL.md",
+          ".agents/.agents/skills/course-notes-organizer/assets/aula-template.md",
+          ".agents/.agents/skills/obsidian-governance/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/agents/governor/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/commands/apply-governance/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/commands/changed-files/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/commands/mark-baseline/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/commands/status/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/references/delta-tracking/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/references/policies/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/workflows/delta-governance/SKILL.md",
+          ".agents/.agents/skills/obsidian-markdown/SKILL.md",
+          ".agents/.agents/skills/obsidian-markdown/references/CALLOUTS.md",
+          ".agents/.agents/skills/obsidian-markdown/references/EMBEDS.md",
+          ".agents/.agents/skills/obsidian-markdown/references/PROPERTIES.md",
+          ".agents/skills/course-notes-organizer/SKILL.md",
+          ".agents/skills/course-notes-organizer/assets/aula-template.md",
+          ".agents/skills/obsidian-governance/SKILL.md",
+          ".agents/skills/obsidian-governance/agents/governor/SKILL.md",
+          ".agents/skills/obsidian-governance/commands/apply-governance/SKILL.md",
+          ".agents/skills/obsidian-governance/commands/changed-files/SKILL.md",
+          ".agents/skills/obsidian-governance/commands/mark-baseline/SKILL.md",
+          ".agents/skills/obsidian-governance/commands/status/SKILL.md",
+          ".agents/skills/obsidian-governance/references/delta-tracking/SKILL.md",
+          ".agents/skills/obsidian-governance/references/policies/SKILL.md",
+          ".agents/skills/obsidian-governance/workflows/delta-governance/SKILL.md",
+          ".agents/skills/obsidian-markdown/SKILL.md",
+          ".agents/skills/obsidian-markdown/references/CALLOUTS.md",
+          ".agents/skills/obsidian-markdown/references/EMBEDS.md",
+          ".agents/skills/obsidian-markdown/references/PROPERTIES.md",
+          "3 - Recursos/Excalidraw/Backlog de Features 2026-05-07 09.53.56.excalidraw.md",
+          "AGENTS.md",
+          "AGENTS_extracted/.agents/skills/course-notes-organizer/SKILL.md",
+          "AGENTS_extracted/.agents/skills/course-notes-organizer/assets/aula-template.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/agents/governor/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/commands/apply-governance/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/commands/changed-files/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/commands/mark-baseline/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/commands/status/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/references/delta-tracking/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/references/policies/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/workflows/delta-governance/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-markdown/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-markdown/references/CALLOUTS.md",
+          "AGENTS_extracted/.agents/skills/obsidian-markdown/references/EMBEDS.md",
+          "AGENTS_extracted/.agents/skills/obsidian-markdown/references/PROPERTIES.md",
+          "AGENTS_extracted/AGENTS.md",
+          "Guia de Tageamento - Rede Neural.md"
+        ]
+      }
+    },
+    {
+      "title": "Step 3: Tag governance",
+      "script": "tag_vault_notes.py",
+      "args": [
+        "--only-files-json",
+        "C:\\Users\\ModalGR\\Documents\\Obsidian Vault\\.obsidian-governance\\reports\\last-changed-markdown.json"
+      ],
+      "exit_code": 0,
+      "stdout": "notes_scanned 4\nnotes_changed 0\nmode full\ntag_suggestions_count 8\ntag_suggestions_report C:\\Users\\ModalGR\\Documents\\Obsidian Vault\\.obsidian-governance\\reports\\tag-suggestions-latest.json"
+    },
+    {
+      "title": "Step 4: Icon governance",
+      "script": "populate_folder_icons.py",
+      "exit_code": 0,
+      "stdout": "folders_total 63\nicons_existing 64\nicons_added 0\nicons_updated 0\nicons_final 64\nicon_suggestions_count 15\nicon_suggestions_report C:\\Users\\ModalGR\\Documents\\Obsidian Vault\\.obsidian-governance\\reports\\icon-suggestions-latest.json"
+    },
+    {
+      "title": "Validation: forbidden tags",
+      "exit_code": 0,
+      "payload": {
+        "count": 0,
+        "hits": []
+      }
+    },
+    {
+      "title": "Step 5: Post-check delta",
+      "script": "obsidian_delta.py",
+      "args": [
+        "changed",
+        "--markdown-only"
+      ],
+      "exit_code": 0,
+      "payload": {
+        "base": "95b8e00c23757bd77fe7243b96a228329aab79ba",
+        "count": 49,
+        "files": [
+          ".agents/.agents/skills/course-notes-organizer/SKILL.md",
+          ".agents/.agents/skills/course-notes-organizer/assets/aula-template.md",
+          ".agents/.agents/skills/obsidian-governance/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/agents/governor/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/commands/apply-governance/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/commands/changed-files/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/commands/mark-baseline/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/commands/status/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/references/delta-tracking/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/references/policies/SKILL.md",
+          ".agents/.agents/skills/obsidian-governance/workflows/delta-governance/SKILL.md",
+          ".agents/.agents/skills/obsidian-markdown/SKILL.md",
+          ".agents/.agents/skills/obsidian-markdown/references/CALLOUTS.md",
+          ".agents/.agents/skills/obsidian-markdown/references/EMBEDS.md",
+          ".agents/.agents/skills/obsidian-markdown/references/PROPERTIES.md",
+          ".agents/skills/course-notes-organizer/SKILL.md",
+          ".agents/skills/course-notes-organizer/assets/aula-template.md",
+          ".agents/skills/obsidian-governance/SKILL.md",
+          ".agents/skills/obsidian-governance/agents/governor/SKILL.md",
+          ".agents/skills/obsidian-governance/commands/apply-governance/SKILL.md",
+          ".agents/skills/obsidian-governance/commands/changed-files/SKILL.md",
+          ".agents/skills/obsidian-governance/commands/mark-baseline/SKILL.md",
+          ".agents/skills/obsidian-governance/commands/status/SKILL.md",
+          ".agents/skills/obsidian-governance/references/delta-tracking/SKILL.md",
+          ".agents/skills/obsidian-governance/references/policies/SKILL.md",
+          ".agents/skills/obsidian-governance/workflows/delta-governance/SKILL.md",
+          ".agents/skills/obsidian-markdown/SKILL.md",
+          ".agents/skills/obsidian-markdown/references/CALLOUTS.md",
+          ".agents/skills/obsidian-markdown/references/EMBEDS.md",
+          ".agents/skills/obsidian-markdown/references/PROPERTIES.md",
+          "3 - Recursos/Excalidraw/Backlog de Features 2026-05-07 09.53.56.excalidraw.md",
+          "AGENTS.md",
+          "AGENTS_extracted/.agents/skills/course-notes-organizer/SKILL.md",
+          "AGENTS_extracted/.agents/skills/course-notes-organizer/assets/aula-template.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/agents/governor/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/commands/apply-governance/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/commands/changed-files/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/commands/mark-baseline/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/commands/status/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/references/delta-tracking/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/references/policies/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-governance/workflows/delta-governance/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-markdown/SKILL.md",
+          "AGENTS_extracted/.agents/skills/obsidian-markdown/references/CALLOUTS.md",
+          "AGENTS_extracted/.agents/skills/obsidian-markdown/references/EMBEDS.md",
+          "AGENTS_extracted/.agents/skills/obsidian-markdown/references/PROPERTIES.md",
+          "AGENTS_extracted/AGENTS.md",
+          "Guia de Tageamento - Rede Neural.md"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "ok": true,
+    "base_commit": "95b8e00c23757bd77fe7243b96a228329aab79ba",
+    "head_commit": "95b8e00c23757bd77fe7243b96a228329aab79ba",
+    "changed_markdown_before": 49,
+    "changed_markdown_after": 49,
+    "mark_applied": false,
+    "forbidden_tags_hits": 0
+  }
+}

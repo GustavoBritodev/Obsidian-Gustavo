@@ -1,6 +1,12 @@
 ---
 tags:
-  - tipo/trabalho/projeto/automaes
+- tipo/trabalho/projeto/automaes
+- API
+- AWS
+- Azure
+- n8n
+- Python
+- SQL
 ---
 # Contexto: Automação de Offboarding Mosten (Playbook 030/25) via n8n
 

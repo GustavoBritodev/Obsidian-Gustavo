@@ -1,6 +1,10 @@
 ---
 tags:
-  - tipo/trabalho/projeto/automaes
+- tipo/trabalho/projeto/automaes
+- API
+- Azure
+- n8n
+- SQL
 ---
 # Runbook — Automação de Offboarding (Playbook 030/25)
 

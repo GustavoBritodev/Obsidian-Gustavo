@@ -1,6 +1,11 @@
 ---
 tags:
-  - tipo/trabalho/projeto/automaes
+- tipo/trabalho/projeto/automaes
+- API
+- AWS
+- Azure
+- n8n
+- SQL
 ---
 # Guia de Implementação: Automação de Faturas SaaS no N8N
 

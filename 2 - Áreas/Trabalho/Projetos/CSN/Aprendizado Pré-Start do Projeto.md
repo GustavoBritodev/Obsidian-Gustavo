@@ -1,6 +1,7 @@
 ---
 tags:
-  - tipo/trabalho/projeto/csn
+- tipo/trabalho/projeto/csn
+- API
 ---
 # Glossário Solicitação de Liberação de Carga Solta:
 ## Bill Of Lading (BL):

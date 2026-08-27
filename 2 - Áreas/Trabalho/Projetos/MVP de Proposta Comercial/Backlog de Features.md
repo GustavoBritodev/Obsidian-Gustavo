@@ -1,6 +1,8 @@
 ---
 tags:
-  - tipo/trabalho/projeto/mvp_de_proposta_comercial
+- tipo/trabalho/projeto/mvp_de_proposta_comercial
+- API
+- Excalidraw
 ---
 #HNS/Backlog/MVPPropostaComercial
 # Lista de Features:

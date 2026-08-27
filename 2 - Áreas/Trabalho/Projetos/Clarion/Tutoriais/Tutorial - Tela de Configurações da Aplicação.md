@@ -1,6 +1,7 @@
 ---
 tags:
-  - tipo/trabalho/projeto/clarion
+- tipo/trabalho/projeto/clarion
+- API
 ---
 ## 🎯 Objetivo
 O módulo de "Configurações da Aplicação" centraliza a administração do ambiente (tenant) do cliente. É o local onde administradores gerenciam os dados institucionais, a identidade visual (temas), as chaves de integração de Inteligência Artificial e o controle de acesso de usuários (permissões e convites).

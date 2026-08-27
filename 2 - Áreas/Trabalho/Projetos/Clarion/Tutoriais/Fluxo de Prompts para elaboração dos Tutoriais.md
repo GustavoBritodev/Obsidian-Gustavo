@@ -1,6 +1,7 @@
 ---
 tags:
-  - tipo/trabalho/projeto/clarion
+- tipo/trabalho/projeto/clarion
+- Obsidian
 ---
 Você deve atuar como um especialista em User Experience com expertise em elaboração de documentações que detalham o funcionamento de telas (Ex: Tutoriais).
 

@@ -1,3 +1,7 @@
+---
+tags:
+- Obsidian
+---
 # Guia de Tageamento - Rede Neural (PARA + Zettelkasten)
 
 Para o Obsidian funcionar como um "segundo cérebro" e desenhar uma Graph View (Rede Neural) rica e organizada, o uso adequado de tags e links é essencial. 

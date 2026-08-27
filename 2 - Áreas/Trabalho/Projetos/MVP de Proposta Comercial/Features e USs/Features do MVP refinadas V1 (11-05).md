@@ -1,6 +1,7 @@
 ---
 tags:
-  - tipo/trabalho/projeto/mvp_de_proposta_comercial
+- tipo/trabalho/projeto/mvp_de_proposta_comercial
+- API
 ---
 #HNS/Features/MVPPropostaComercial
 ## 1. Gestão de Acesso: Camada de Proteção por Senha

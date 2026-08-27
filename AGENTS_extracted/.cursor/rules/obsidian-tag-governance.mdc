@@ -1,0 +1,30 @@
+---
+description: Enforce Obsidian tag taxonomy, delta-only processing, and explicit tag reports
+alwaysApply: true
+---
+
+# Obsidian Tag Governance (Mandatory)
+
+## Scope
+
+- Tag operations must run on delta files only (`obsidian_delta.py changed --markdown-only`).
+- Avoid full-vault tagging unless the user explicitly asks for it.
+
+## Forbidden Tag Patterns
+
+- Do not create generic tags: `Geral`, `Trabalho`, `areas`.
+- Do not create year tags: `19xx`, `20xx`.
+- Do not create free-text title words as tags (noise tags).
+
+## Allowed Strategy
+
+- Prefer controlled taxonomy: technology, client, project code, and domain tags.
+- In daily notes, infer only from `## Resumo` and `### Tarefas` (ignore tasks widgets).
+- Any new tag outside taxonomy requires explicit user approval before applying.
+
+## Reporting
+
+- Every governance execution must provide:
+  - `tags_adicionadas_unicas`
+  - `tags_removidas_unicas`
+  - per-file tag changes summary

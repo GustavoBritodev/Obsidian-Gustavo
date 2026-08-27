@@ -1,6 +1,7 @@
 ---
 tags:
-  - tipo/trabalho/projeto/clarion
+- tipo/trabalho/projeto/clarion
+- API
 ---
 ## 🎯 Objetivo
 Detalhar o funcionamento do painel de construção visual. Após conectar os dados (veja [[Tutorial - Tela de Criação de Gráficos]]), o usuário acessa o motor de edição, padronizado em 5 abas principais para modelar a informação.

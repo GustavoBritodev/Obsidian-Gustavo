@@ -1,6 +1,8 @@
 ---
 tags:
-  - tipo/trabalho/projeto/playbooks
+- tipo/trabalho/projeto/playbooks
+- AWS
+- Azure
 ---
 # Pontos a Confirmar e Lacunas — Playbooks de TI Mosten (034/26 a 047/26)
 

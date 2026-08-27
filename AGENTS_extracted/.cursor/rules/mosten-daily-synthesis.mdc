@@ -1,0 +1,18 @@
+---
+description: Sintetizar dailies de Trabalho Mosten a partir da transcrição e cruzar com Demandas
+globs: "**/Trabalho Mosten/Daily/**/*.md"
+alwaysApply: false
+---
+
+# Daily Mosten — síntese
+
+Quando o usuário pedir para sintetizar uma daily (ou estiver editando nota em `Trabalho Mosten/Daily/`):
+
+1. Carregar `@.agents/skills/obsidian-governance/SKILL.md` e o fluxo delta se for alterar tags/demandas.
+2. Ler a seção `## Transcrição` da nota do dia por completo.
+3. Preencher na própria nota: Resumo, Decisões, Minhas demandas, Pendências, Eu estou devendo, Alguém está me devendo, Preciso pedir/alinhar, Riscos/bloqueios.
+4. Cruzar com `Demandas/Backlog/` e `Demandas/Concluidas/`; **sugerir** updates com `Task 🆔 Mosten`.
+5. **Perguntar** antes de criar/mover demandas ou marcar concluído.
+6. Não inventar compromissos que não estejam na transcrição.
+7. Marcar frontmatter `sintetizado: true` e atualizar data.
+8. Índice: `Daily/00 Índice Daily.md` · Demandas: `Demandas/00 Índice Demandas.md`.

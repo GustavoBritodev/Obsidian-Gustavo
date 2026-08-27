@@ -1,6 +1,7 @@
 ---
 tags:
-  - tipo/trabalho/projeto/playbooks
+- tipo/trabalho/projeto/playbooks
+- Azure
 ---
 ## Premissas
 

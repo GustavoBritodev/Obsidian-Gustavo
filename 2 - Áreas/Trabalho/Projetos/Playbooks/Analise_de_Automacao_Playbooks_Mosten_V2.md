@@ -1,6 +1,10 @@
 ---
 tags:
-  - tipo/trabalho/projeto/playbooks
+- tipo/trabalho/projeto/playbooks
+- API
+- Azure
+- n8n
+- Python
 ---
 # Análise de Automação — Playbooks de TI Interna Mosten
 
