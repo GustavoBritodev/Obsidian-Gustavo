@@ -1,42 +1,66 @@
 /* =====================================================================
-   calendar_daily.css
-   Exibe o widget de calendário (plugin Calendar) SOMENTE em notas
-   que estejam dentro da pasta "0 Diário" (Daily Notes).
+   calendar_daily.css  –  Estilo do painel de Calendário (plugin Calendar)
+   Seletores baseados no DOM real do Obsidian 1.x
    ===================================================================== */
 
-/* Esconde o calendário por padrão em todo o app */
-.calendar-container,
+/* Leaf do calendário na sidebar */
 .workspace-leaf-content[data-type="calendar"] {
-  display: none !important;
-}
-
-/* Mostra o calendário apenas quando a nota ativa é uma Daily Note */
-.is-daily-note .calendar-container,
-.is-daily-note .workspace-leaf-content[data-type="calendar"] {
-  display: block !important;
-}
-
-/* Estilização do calendário para combinar com o tema Minimal */
-.calendar-container {
-  padding: 8px;
+  background: var(--background-primary);
   border-radius: 8px;
-  background: var(--background-secondary);
+  overflow: hidden;
 }
 
-.calendar-container th,
-.calendar-container td {
-  font-size: 0.8em;
+/* Cabeçalho do mês */
+.workspace-leaf-content[data-type="calendar"] .nav-header,
+.workspace-leaf-content[data-type="calendar"] th {
+  color: var(--text-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Células de dias */
+.workspace-leaf-content[data-type="calendar"] td {
+  font-size: 0.82rem;
   color: var(--text-muted);
+  border-radius: 50%;
+  transition: background 0.15s ease;
 }
 
-.calendar-container td.today {
-  background: var(--interactive-accent);
-  color: var(--text-on-accent);
-  border-radius: 50%;
+/* Dia com nota existente */
+.workspace-leaf-content[data-type="calendar"] td.has-note {
+  color: var(--text-normal);
+  font-weight: 600;
+}
+
+/* Dia de hoje */
+.workspace-leaf-content[data-type="calendar"] td.today {
+  background: var(--interactive-accent) !important;
+  color: var(--text-on-accent) !important;
   font-weight: 700;
 }
 
-.calendar-container td.has-note {
-  color: var(--text-normal);
-  font-weight: 600;
+/* Hover nas células */
+.workspace-leaf-content[data-type="calendar"] td:hover {
+  background: var(--background-modifier-hover);
+  cursor: pointer;
+}
+
+/* Número da semana (coluna lateral) */
+.workspace-leaf-content[data-type="calendar"] td.week-num {
+  color: var(--text-faint);
+  font-size: 0.7rem;
+}
+
+/* Botões de navegação (prev/next mês) */
+.workspace-leaf-content[data-type="calendar"] .arrow {
+  color: var(--text-muted);
+  border-radius: 4px;
+  padding: 2px 6px;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.workspace-leaf-content[data-type="calendar"] .arrow:hover {
+  color: var(--text-accent);
+  background: var(--background-modifier-hover);
 }

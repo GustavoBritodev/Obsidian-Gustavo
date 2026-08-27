@@ -1,42 +1,46 @@
 /* =====================================================================
-   graph_sidebar.css
-   Mantém o painel de grafo (Local Graph) fixo e estilizado
-   na barra lateral direita do Obsidian.
+   graph_sidebar.css  –  Painel de Grafo fixo na sidebar direita
+   Seletores baseados no DOM real do Obsidian 1.x
    ===================================================================== */
 
-/* Garante que o leaf do grafo na sidebar direita não seja recolhido */
-.workspace-split.mod-right-split
-  .workspace-leaf-content[data-type="localgraph"],
-.workspace-split.mod-right-split
-  .workspace-leaf-content[data-type="graph"] {
-  min-height: 280px;
-  flex-shrink: 0;
+/* ── Leaf do grafo local na sidebar direita ───────────────────────── */
+.workspace-split.mod-right-split .workspace-leaf-content[data-type="localgraph"],
+.workspace-split.mod-right-split .workspace-leaf-content[data-type="graph"] {
+  min-height: 260px;
+  background: var(--background-primary);
 }
 
-/* Container do canvas do grafo */
-.workspace-split.mod-right-split .graph-view-outer {
-  height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
+/* Canvas interno do grafo */
+.workspace-split.mod-right-split .workspace-leaf-content[data-type="localgraph"] canvas,
+.workspace-split.mod-right-split .workspace-leaf-content[data-type="graph"] canvas {
+  border-radius: 6px;
 }
 
-/* Borda sutil para separar do restante da sidebar */
-.workspace-split.mod-right-split
-  .workspace-leaf[data-type="localgraph"],
-.workspace-split.mod-right-split
-  .workspace-leaf[data-type="graph"] {
-  border-top: 1px solid var(--background-modifier-border);
-}
-
-/* Título do painel de grafo */
-.workspace-split.mod-right-split
-  .workspace-leaf[data-type="localgraph"]
-  .view-header-title,
-.workspace-split.mod-right-split
-  .workspace-leaf[data-type="graph"]
-  .view-header-title {
-  font-size: 0.75rem;
+/* Título da view (header) */
+.workspace-split.mod-right-split .workspace-leaf[data-type="localgraph"] .view-header-title,
+.workspace-split.mod-right-split .workspace-leaf[data-type="graph"] .view-header-title {
+  font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-faint);
+}
+
+/* Separador visual entre painéis da sidebar */
+.workspace-split.mod-right-split .workspace-leaf[data-type="localgraph"],
+.workspace-split.mod-right-split .workspace-leaf[data-type="graph"] {
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+/* Barra de ações do grafo (botões de zoom etc.) */
+.workspace-split.mod-right-split .graph-controls {
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+.workspace-split.mod-right-split .graph-controls:hover {
+  opacity: 1;
+}
+
+/* ── Garantia de que o leaf não some ao redimensionar ─────────────── */
+.workspace-split.mod-right-split .workspace-leaf-resize-handle {
+  cursor: row-resize;
 }
