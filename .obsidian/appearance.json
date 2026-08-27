@@ -1,4 +1,8 @@
 {
   "cssTheme": "Minimal",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "calendar_daily",
+    "graph_sidebar"
+  ]
 }

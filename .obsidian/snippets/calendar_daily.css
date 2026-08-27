@@ -1,0 +1,42 @@
+/* =====================================================================
+   calendar_daily.css
+   Exibe o widget de calendário (plugin Calendar) SOMENTE em notas
+   que estejam dentro da pasta "0 Diário" (Daily Notes).
+   ===================================================================== */
+
+/* Esconde o calendário por padrão em todo o app */
+.calendar-container,
+.workspace-leaf-content[data-type="calendar"] {
+  display: none !important;
+}
+
+/* Mostra o calendário apenas quando a nota ativa é uma Daily Note */
+.is-daily-note .calendar-container,
+.is-daily-note .workspace-leaf-content[data-type="calendar"] {
+  display: block !important;
+}
+
+/* Estilização do calendário para combinar com o tema Minimal */
+.calendar-container {
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--background-secondary);
+}
+
+.calendar-container th,
+.calendar-container td {
+  font-size: 0.8em;
+  color: var(--text-muted);
+}
+
+.calendar-container td.today {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.calendar-container td.has-note {
+  color: var(--text-normal);
+  font-weight: 600;
+}
