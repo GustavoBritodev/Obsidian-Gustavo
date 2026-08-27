@@ -33,7 +33,6 @@
     "tipo/diario": 1,
     "tipo/estudo": 4,
     "tipo/geral": 2,
-    "tipo/projeto": 3,
     "tipo/trabalho": 5,
     "hns/backlog/mvppropostacomercial": 1,
     "hns/features/cct": 1,
@@ -42,9 +41,16 @@
     "hns/userstorys/mvppropostacomercial": 2,
     "suporte/zurich/processoproblem": 1,
     "tipo/estudo/visao_computacional": 1,
-    "tipo/projeto/ballon_tickets_fluxo_qa": 1,
     "tipo/trabalho/projeto": 1,
-    "tipo/trabalho/projeto/automaes": 1
+    "tipo/trabalho/projeto/automaes": 1,
+    "tipo/trabalho/projeto/cct": 2,
+    "tipo/trabalho/projeto/clarion": 3,
+    "tipo/trabalho/projeto/csn": 4,
+    "tipo/trabalho/projeto/gestao_de_acesso_playbooks": 5,
+    "tipo/trabalho/projeto/gestao_de_inventrio_mosten": 6,
+    "tipo/trabalho/projeto/mvp_de_proposta_comercial": 7,
+    "tipo/trabalho/projeto/playbooks": 8,
+    "tipo/trabalho/projeto/zurich_itsm": 9
   },
   "tagColors": {},
   "_version": 4

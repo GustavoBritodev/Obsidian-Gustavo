@@ -4,7 +4,6 @@
   "templates_folder": "Templates",
   "templates_pairs": [],
   "trigger_on_file_creation_mode": "folder",
-  "trigger_on_file_creation": true,
   "auto_jump_to_cursor": false,
   "jump_to_cursor_after_file_name": false,
   "shell_path": "",
@@ -21,5 +20,6 @@
   "enabled_templates_hotkeys": [],
   "startup_templates": [],
   "intellisense_render": "1",
-  "ignore_folders_on_creation": []
+  "ignore_folders_on_creation": [],
+  "trigger_on_file_creation": true
 }

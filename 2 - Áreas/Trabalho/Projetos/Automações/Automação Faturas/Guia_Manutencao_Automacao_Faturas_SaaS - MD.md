@@ -61,14 +61,14 @@ O `RESTART IDENTITY` zera a sequence, então os ids do teste começam em 1 e fic
 
 Todos são enviados da conta autenticada para ela mesma, porque o `Tem PDF` filtra por remetente. Envie um de cada vez, aguardando o ciclo de poll entre eles, para que cada resultado seja atribuível.
 
-| # | Assunto | Anexo | Resultado esperado |
-|---|---|---|---|
-| 1 | `Teste automacao - fatura A` | Fatura A | Lançamento `pendente`, PDF arquivado |
-| 2 | `Teste automacao - fatura B` | Fatura B | Segundo lançamento `pendente` |
-| 3 | `Teste automacao - sem anexo` | nenhum | Descartado pelo `Tem PDF` |
-| 4 | `Teste automacao - PDF escaneado` | PDF sem texto | Lançamento `incompleto`, PDF arquivado |
-| 5 | `Faturamento e Recibo de Ferramentas de Software - teste` | Fatura A | Descartado pela trava anti-realimentação |
-| 6 | `Teste automacao - fatura A reenvio` | Fatura A | **Novo** lançamento, id diferente |
+| #   | Assunto                                                   | Anexo         | Resultado esperado                       |
+| --- | --------------------------------------------------------- | ------------- | ---------------------------------------- |
+| 1   | `Teste automacao - fatura A`                              | Fatura A      | Lançamento `pendente`, PDF arquivado     |
+| 2   | `Teste automacao - fatura B`                              | Fatura B      | Segundo lançamento `pendente`            |
+| 3   | `Teste automacao - sem anexo`                             | nenhum        | Descartado pelo `Tem PDF`                |
+| 4   | `Teste automacao - PDF escaneado`                         | PDF sem texto | Lançamento `incompleto`, PDF arquivado   |
+| 5   | `Faturamento e Recibo de Ferramentas de Software - teste` | Fatura A      | Descartado pela trava anti-realimentação |
+| 6   | `Teste automacao - fatura A reenvio`                      | Fatura A      | **Novo** lançamento, id diferente        |
 
 Observações sobre três deles:
 
@@ -97,14 +97,14 @@ SELECT id, status, plataforma, fornecedor, moeda, valor,
 
 O que conferir:
 
-| Verificação | Esperado |
-|---|---|
-| Quantidade de registros | 3 antes do e-mail 6, 4 depois |
-| E-mails 3 e 5 | **Não** produziram registro |
-| Faturas A e B | `pendente`, com todos os campos preenchidos |
-| PDF escaneado | `incompleto`, com `campos_faltantes` listando os campos |
-| `caminho_arquivo` | Preenchido nos três, com id do OneDrive |
-| `data_vencimento` | Dia 15 do mês corrente em todos |
+| Verificação             | Esperado                                                |
+| ----------------------- | ------------------------------------------------------- |
+| Quantidade de registros | 3 antes do e-mail 6, 4 depois                           |
+| E-mails 3 e 5           | **Não** produziram registro                             |
+| Faturas A e B           | `pendente`, com todos os campos preenchidos             |
+| PDF escaneado           | `incompleto`, com `campos_faltantes` listando os campos |
+| `caminho_arquivo`       | Preenchido nos três, com id do OneDrive                 |
+| `data_vencimento`       | Dia 15 do mês corrente em todos                         |
 
 **Conferir os valores contra os PDFs, campo a campo.** Esta é a única etapa da automação onde um dado pode nascer errado sem nada acusar depois. Abra as faturas A e B lado a lado com o resultado e confira fornecedor, valor, moeda, data de emissão e número do documento. Atenção especial ao fornecedor: o modelo já confundiu o emissor com o destinatário.
 
