@@ -2,3 +2,10 @@
 .obsidian/workspace-mobile.json
 .obsidian/core-plugins-migration.json
 .DS_Store
+
+# Windows specific
+Thumbs.db
+desktop.ini
+.vscode/
+.claude/
+.trash/

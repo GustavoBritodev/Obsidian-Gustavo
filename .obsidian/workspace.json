@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "741e59941eaf5907",
+    "type": "split",
+    "children": [
+      {
+        "id": "afffb970c7a20448",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef8afd763bd1657a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nova aba"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "96bbebd0adfc70cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "43eb249ac2f107a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "337eedbfb92c8936",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "edd17a7c96b30fdd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "440a56348857fd32",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "407696c460d0a2e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "5937cc01ad037a18",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8fcbec44f49b3d3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Bootcamp Java - DIO/Fundamentos POO/Construtores.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Construtores"
+            }
+          },
+          {
+            "id": "55396ad29255ab96",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Bootcamp Java - DIO/Fundamentos POO/Construtores.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Construtores"
+            }
+          },
+          {
+            "id": "ece7189e3e4e94ed",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ce484d4454c9de26",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Bootcamp Java - DIO/Fundamentos POO/Construtores.md"
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Construtores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Criar nova base": false,
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "337eedbfb92c8936",
+  "lastOpenFiles": [
+    "4 - Arquivos/Recovery/Bot Agendamento.md",
+    "3 - Recursos/Anexos/Pasted image 20260715154251.png",
+    "3 - Recursos/Anexos/Pasted image 20260715154020.png",
+    "3 - Recursos/Anexos/Pasted image 20260701203621.png",
+    "3 - Recursos/Anexos/Pasted image 20260701203429.png",
+    "3 - Recursos/Anexos/Pasted image 20260701202423.png",
+    "2 - Áreas/Estudos/Linguagem C/Faixa preta em C/Tipos Abstratos de Dados, Módulos e Abstração/Aula TAD.md",
+    "2 - Áreas/Estudos/Linguagem C/Faixa preta em C/Tipos Abstratos de Dados, Módulos e Abstração/Aula Recursividade.md",
+    "2 - Áreas/Estudos/Linguagem C/Faixa preta em C/Tipos Abstratos de Dados, Módulos e Abstração",
+    "2 - Áreas/Estudos/Linguagem C/Faixa preta em C",
+    "Recovery/Telegram.md",
+    "Automações/Guia_Implementacao_Bot_Agenda_Telegram_n8n.md",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Imagens/Pasted image 20260504201856.png",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Imagens/Pasted image 20260502201651.png",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Imagens/Pasted image 20260407210953.png",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Imagens/Pasted image 20260407210332.png",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Imagens/Pasted image 20260407205104.png",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Matemática para Dados/Medidas de Dispersão.md",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Matemática para Dados/Medidas de Posição.md",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Matemática para Dados/Estatística Descritiva.md",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Imagens",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Anotações Iniciais Análise de Dados.md",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Entendendo o Problema - Dados.md",
+    "2 - Áreas/Estudos/Análise de Dados_tmp/Matemática para Dados",
+    "2 - Áreas/Estudos/Análise de Dados_tmp",
+    "4 - Arquivos/Recovery",
+    "3 - Recursos/Excalidraw/Drawing 2026-05-07 09.52.04.excalidraw.md",
+    "3 - Recursos/Excalidraw/Backlog de Features 2026-05-07 09.53.56.excalidraw.md",
+    "3 - Recursos/Excalidraw/Backlog de Features 2026-05-07 09.53.05.excalidraw.md",
+    "3 - Recursos/Links de Estudo",
+    "3 - Recursos/Anexos",
+    "3 - Recursos/Excalidraw",
+    "3 - Recursos/Automações",
+    "4 - Arquivos/Templates/Template - Nota Diária.md",
+    "4 - Arquivos/AGENTS_extracted/AGENTS.md",
+    "4 - Arquivos/Guia de Tageamento - Rede Neural.md",
+    "4 - Arquivos/Link.md",
+    "2 - Áreas/Estudos/Visão Computacional/Introdução Visão Computacional.md",
+    "2 - Áreas/Faculdade/Datasets para Iniciação Cientifica.md",
+    "2 - Áreas/Estudos/Harness Engineering.md",
+    "1 - Projetos/Trabalho/Zurich ITSM/Prompts/V2/V2 Prompt Torre de Problem.md",
+    "1 - Projetos/Trabalho/Zurich ITSM/Prompts/V2/V2 Prompt Torre de Config.md",
+    "1 - Projetos/Trabalho/Zurich ITSM/Prompts/V1/V1 Prompt Torre de Incidentes.md",
+    "1 - Projetos/Trabalho/Zurich ITSM/Prompts/V1/V1 Prompt Torre de Problem.md",
+    "1 - Projetos/Trabalho/Zurich ITSM/Prompts/V1/V1 Prompt Torre de RM.md",
+    "1 - Projetos/Trabalho/Zurich ITSM/Prompts/V1/V1 Prompt Torre de Config.md",
+    "Sem título.canvas",
+    "Sem título 1.canvas"
+  ]
+}

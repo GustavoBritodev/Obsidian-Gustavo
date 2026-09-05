@@ -1,0 +1,3 @@
+- [ ] https://app.rocketseat.com.br/jornada/introducao-a-aws/conteudos
+- [ ] https://app.rocketseat.com.br/jornada/data-analytics/conteudos
+- [ ] https://app.rocketseat.com.br/jornada/machine-learning-em-inteligencia-artificial/conteudos
